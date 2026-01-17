@@ -255,7 +255,7 @@ export const StaggerTestimonials: React.FC = () => {
         <button
           onClick={() => handleMove(-1)}
           className={cn(
-            "flex h-14 w-14 items-center justify-center text-2xl transition-colors",
+            "flex h-14 w-14 items-center justify-center text-2xl transition-colors cursor-pointer",
             "bg-white border-2 border-white/20 hover:bg-[#c83232] hover:text-white hover:border-[#c83232] text-gray-700",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c83232] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           )}
@@ -266,7 +266,7 @@ export const StaggerTestimonials: React.FC = () => {
         <button
           onClick={() => handleMove(1)}
           className={cn(
-            "flex h-14 w-14 items-center justify-center text-2xl transition-colors",
+            "flex h-14 w-14 items-center justify-center text-2xl transition-colors cursor-pointer",
             "bg-white border-2 border-white/20 hover:bg-[#c83232] hover:text-white hover:border-[#c83232] text-gray-700",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c83232] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           )}

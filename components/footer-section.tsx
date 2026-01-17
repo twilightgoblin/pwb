@@ -110,20 +110,20 @@ export function FooterSection() {
                   </p>
                   
                   {/* Phone Number - Large */}
-                  <div className="flex items-center justify-center gap-3 text-white mb-6">
+                  <div className="flex items-center justify-center gap-3 text-white mb-6 cursor-pointer hover:text-gray-200 transition-colors duration-200">
                     <Phone className="w-6 h-6" />
                     <span className="text-2xl font-bold">9580574211</span>
                   </div>
 
                   {/* Email */}
-                  <div className="text-white/90 mb-6">
+                  <div className="text-white/90 mb-6 cursor-pointer hover:text-white transition-colors duration-200">
                     <span className="text-base">sales@slmi.in</span>
                   </div>
 
                   {/* CTA Button */}
                   <Button 
                     size="lg"
-                    className="w-full bg-white text-[#c83232] hover:bg-gray-100 rounded-full h-12 text-base font-semibold"
+                    className="w-full bg-white text-[#c83232] hover:bg-gray-100 rounded-full h-12 text-base font-semibold cursor-pointer"
                   >
                     Book Free Inspection
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -146,7 +146,7 @@ export function FooterSection() {
                     <li key={link}>
                       <a 
                         href="#" 
-                        className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                        className="text-gray-400 hover:text-white transition-colors duration-200 text-sm cursor-pointer"
                       >
                         {link}
                       </a>
@@ -165,7 +165,7 @@ export function FooterSection() {
                     <li key={service}>
                       <a 
                         href="#" 
-                        className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                        className="text-gray-400 hover:text-white transition-colors duration-200 text-sm cursor-pointer"
                       >
                         {service}
                       </a>

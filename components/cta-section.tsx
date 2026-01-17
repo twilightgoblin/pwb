@@ -65,13 +65,13 @@ export function CtaSection() {
           }`}>
             <a 
               href="tel:09580574211"
-              className="bg-[#c83232] hover:bg-[#a02828] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center min-w-[200px]"
+              className="bg-[#c83232] hover:bg-[#a02828] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center min-w-[200px] cursor-pointer"
             >
               CALL NOW: 9580574211
             </a>
             <a 
               href="mailto:sales@slmi.in"
-              className="bg-[#c83232] hover:bg-[#a02828] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center min-w-[200px]"
+              className="bg-[#c83232] hover:bg-[#a02828] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center min-w-[200px] cursor-pointer"
             >
               EMAIL: sales@slmi.in
             </a>

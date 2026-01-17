@@ -70,7 +70,7 @@ export function FaqSection() {
             <h2 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl font-bold text-slate-900 mb-8 leading-tight">
               Everything You Need to Know
             </h2>
-            <button className="text-slate-900 font-medium hover:text-[#c83232] transition-colors duration-300 flex items-center gap-2 group">
+            <button className="text-slate-900 font-medium hover:text-[#c83232] transition-colors duration-300 flex items-center gap-2 group cursor-pointer">
               All questions 
               <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
             </button>
@@ -91,7 +91,7 @@ export function FaqSection() {
                 >
                   <button
                     onClick={() => toggleItem(index)}
-                    className="w-full py-6 text-left flex items-center justify-between group hover:bg-slate-50/50 transition-colors duration-300 rounded-lg px-4"
+                    className="w-full py-6 text-left flex items-center justify-between group hover:bg-slate-50/50 transition-colors duration-300 rounded-lg px-4 cursor-pointer"
                   >
                     <h3 className="font-medium text-slate-900 text-lg pr-8 leading-relaxed group-hover:text-[#c83232] transition-colors duration-300">
                       {faq.question}

@@ -85,7 +85,7 @@ export function HeroServices() {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Full Image Card with Slide-in Text */}
-              <div className="relative h-48 md:h-56 lg:h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-1">
+              <div className="relative h-48 md:h-56 lg:h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-1 cursor-pointer">
                 
                 {/* Full Background Image - Better positioning for mobile */}
                 <Image
@@ -140,7 +140,7 @@ export function HeroServices() {
         }`}>
           <Button 
             variant="outline"
-            className="border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white font-semibold px-8 py-3 rounded-xl group"
+            className="border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white font-semibold px-8 py-3 rounded-xl group cursor-pointer"
           >
             View All Services
             <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />

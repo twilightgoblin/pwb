@@ -66,7 +66,7 @@ export function ServiceAreasSection() {
             {areas.map((area, index) => (
               <div 
                 key={area}
-                className={`bg-white rounded-xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:border-[#c83232]/20 ${
+                className={`bg-white rounded-xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:border-[#c83232]/20 cursor-pointer ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
                 style={{ transitionDelay: `${400 + index * 100}ms` }}

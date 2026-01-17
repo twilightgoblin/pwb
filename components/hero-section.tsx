@@ -85,7 +85,7 @@ export function HeroSection() {
                   <button
                     key={item.name}
                     onClick={() => scrollToSection(item.href)}
-                    className="text-sm font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200"
+                    className="text-sm font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 cursor-pointer"
                   >
                     {item.name}
                   </button>
@@ -93,7 +93,7 @@ export function HeroSection() {
               </div>
 
               {/* Desktop Phone Number */}
-              <div className="hidden md:flex items-center gap-2 text-gray-900">
+              <div className="hidden md:flex items-center gap-2 text-gray-900 cursor-pointer hover:text-[#c83232] transition-colors duration-200">
                 <Phone className="w-4 h-4 text-[#c83232]" />
                 <span className="text-base font-semibold">9580574211</span>
               </div>
@@ -101,7 +101,7 @@ export function HeroSection() {
               {/* Mobile Menu Button */}
               <button
                 onClick={toggleMobileMenu}
-                className="md:hidden p-2 rounded-lg hover:bg-white/50 transition-colors duration-200"
+                className="md:hidden p-2 rounded-lg hover:bg-white/50 transition-colors duration-200 cursor-pointer"
                 aria-label="Toggle mobile menu"
               >
                 {isMobileMenuOpen ? (
@@ -125,7 +125,7 @@ export function HeroSection() {
                     <button
                       key={item.name}
                       onClick={() => scrollToSection(item.href)}
-                      className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 py-2"
+                      className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 py-2 cursor-pointer"
                     >
                       {item.name}
                     </button>
@@ -134,7 +134,7 @@ export function HeroSection() {
                 
                 {/* Mobile Phone Number */}
                 <div className="pt-3 border-t border-gray-200/50">
-                  <div className="flex items-center gap-3 text-gray-900">
+                  <div className="flex items-center gap-3 text-gray-900 cursor-pointer hover:text-[#c83232] transition-colors duration-200">
                     <Phone className="w-5 h-5 text-[#c83232]" />
                     <span className="text-base font-semibold">9580574211</span>
                   </div>
@@ -208,7 +208,7 @@ export function HeroSection() {
               <div className="mb-6">
                 <Button 
                   size="lg"
-                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-8 h-[48px] text-base font-semibold group w-full"
+                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-8 h-[48px] text-base font-semibold group w-full cursor-pointer"
                 >
                   Book now
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -253,7 +253,7 @@ export function HeroSection() {
               <div className="mb-16">
                 <Button 
                   size="lg"
-                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-9 h-[52px] text-base font-semibold group"
+                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-9 h-[52px] text-base font-semibold group cursor-pointer"
                 >
                   Book now
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
