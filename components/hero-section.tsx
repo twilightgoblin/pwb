@@ -39,6 +39,8 @@ export function HeroSection() {
   const scrollToSection = (href: string) => {
     if (href === "#") {
       window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else if (href === "/about") {
+      window.location.href = "/about"
     } else {
       const element = document.querySelector(href)
       if (element) {
@@ -51,7 +53,7 @@ export function HeroSection() {
   const navItems = [
     { name: "Home", href: "#" },
     { name: "Our Services", href: "#hero-services" },
-    { name: "About Us", href: "#about-section" },
+    { name: "About Us", href: "/about" },
     { name: "Service Areas", href: "#service-areas-section" },
     { name: "Testimonials", href: "#testimonials-section" },
     { name: "FAQS", href: "#faq-section" },
@@ -82,13 +84,23 @@ export function HeroSection() {
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center gap-8">
                 {navItems.map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => scrollToSection(item.href)}
-                    className="text-sm font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 cursor-pointer"
-                  >
-                    {item.name}
-                  </button>
+                  item.href.startsWith("/") ? (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="text-sm font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 cursor-pointer"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <button
+                      key={item.name}
+                      onClick={() => scrollToSection(item.href)}
+                      className="text-sm font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 cursor-pointer"
+                    >
+                      {item.name}
+                    </button>
+                  )
                 ))}
               </div>
 
@@ -122,13 +134,23 @@ export function HeroSection() {
                 {/* Mobile Navigation Links */}
                 <div className="space-y-3">
                   {navItems.map((item) => (
-                    <button
-                      key={item.name}
-                      onClick={() => scrollToSection(item.href)}
-                      className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 py-2 cursor-pointer"
-                    >
-                      {item.name}
-                    </button>
+                    item.href.startsWith("/") ? (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 py-2 cursor-pointer"
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <button
+                        key={item.name}
+                        onClick={() => scrollToSection(item.href)}
+                        className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 py-2 cursor-pointer"
+                      >
+                        {item.name}
+                      </button>
+                    )
                   ))}
                 </div>
                 
