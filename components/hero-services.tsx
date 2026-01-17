@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 const services = [
   {
@@ -138,13 +139,15 @@ export function HeroServices() {
         <div className={`text-center mt-8 lg:mt-12 transition-all duration-1000 delay-600 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
-          <Button 
-            variant="outline"
-            className="border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white font-semibold px-8 py-3 rounded-xl group cursor-pointer"
-          >
-            View All Services
-            <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-          </Button>
+          <Link href="/services">
+            <Button 
+              variant="outline"
+              className="border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white font-semibold px-8 py-3 rounded-xl group cursor-pointer"
+            >
+              Learn More About Us
+              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
