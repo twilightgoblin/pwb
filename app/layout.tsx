@@ -15,23 +15,15 @@ export const metadata: Metadata = {
   title: "SLMI Pest Control - Complete Pest Protection System",
   description:
     "Eco-safe, certified, and guaranteed pest control services. Professional termite, rodent, and cockroach treatments in Lucknow.",
-  generator: "v0.app",
   icons: {
     icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      { url: "/images/slmi.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/slmi.png", sizes: "16x16", type: "image/png" },
     ],
-    apple: "/apple-icon.png",
+    apple: [
+      { url: "/images/slmi.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/images/slmi.png",
   },
 }
 
