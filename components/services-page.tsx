@@ -126,26 +126,26 @@ export function ServicesPage() {
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           {/* Main Hero */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+            <div className="px-4 lg:px-0">
               <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-4 block">
                 Advanced Protection
               </span>
-              <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h2 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Protect Your Property with Advanced
                 <br />
                 <span className="text-[#c83232]">Anti Termite Reticulation System</span>
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
                 At SLMI Pest Control, we specialize in anti termite reticulation system and innovative pest management solutions to ensure your home or business remains pest-free. Our commitment to excellence, eco-friendly practices, and cutting-edge technology make us the go-to choice for termite and pest control in Lucknow and beyond.
               </p>
-              <Button className="bg-[#c83232] hover:bg-[#a02828] text-white px-8 py-3 rounded-xl font-semibold group">
+              <Button className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 rounded-xl font-semibold group w-full sm:w-auto">
                 Get Free Inspection
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>
-            <div className="relative">
-              <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative px-4 lg:px-0">
+              <div className="relative h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/Sunil-Groups-1.jpg"
                   alt="Anti Termite Reticulation System"
@@ -301,8 +301,8 @@ export function ServicesPage() {
               <Card key={service.id} className={`group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`} style={{ transitionDelay: `${index * 100}ms` }}>
-                {/* Image Section - Always on Top */}
-                <div className="relative h-64 lg:h-80 overflow-hidden">
+                {/* Image Section - Better mobile height */}
+                <div className="relative h-48 sm:h-64 lg:h-80 overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -312,33 +312,33 @@ export function ServicesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                   
                   {/* Title Overlay on Image */}
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="font-[family-name:var(--font-poppins)] text-2xl lg:text-3xl font-bold text-white mb-2">
+                  <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6">
+                    <h3 className="font-[family-name:var(--font-poppins)] text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2">
                       {service.title}
                     </h3>
                   </div>
                 </div>
 
-                {/* Content Section - Always Below Image */}
-                <CardContent className="p-8 lg:p-12">
-                  <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+                {/* Content Section - Better mobile padding */}
+                <CardContent className="p-4 sm:p-6 lg:p-12">
+                  <p className="text-gray-600 mb-6 leading-relaxed text-sm sm:text-base lg:text-lg">
                     {service.description}
                   </p>
 
                   <div className="mb-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">Key Features:</h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <h4 className="font-semibold text-gray-900 mb-3 text-sm sm:text-base">Key Features:</h4>
+                    <div className="grid grid-cols-1 gap-2">
                       {service.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center text-sm text-gray-700">
-                          <CheckCircle className="w-4 h-4 text-[#c83232] mr-2 flex-shrink-0" />
+                        <div key={idx} className="flex items-center text-xs sm:text-sm text-gray-700">
+                          <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-[#c83232] mr-2 flex-shrink-0" />
                           {feature}
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                  <div className="bg-gray-50 rounded-lg p-3 sm:p-4">
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                       <strong>How it works:</strong> {service.details}
                     </p>
                   </div>
@@ -361,18 +361,18 @@ export function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {whyChooseUs.map((item, index) => (
-              <Card key={index} className={`text-center p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-500 bg-white ${
+              <Card key={index} className={`text-center p-4 sm:p-6 lg:p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-500 bg-white ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`} style={{ transitionDelay: `${index * 100}ms` }}>
-                <div className="w-16 h-16 bg-[#c83232]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <item.icon className="w-8 h-8 text-[#c83232]" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#c83232]/10 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                  <item.icon className="w-6 h-6 sm:w-8 sm:h-8 text-[#c83232]" />
                 </div>
-                <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-gray-900 mb-4">
+                <h3 className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   {item.description}
                 </p>
               </Card>

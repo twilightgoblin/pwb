@@ -49,29 +49,29 @@ export function CtaSection() {
       </div>
 
       <div className="container mx-auto px-6 relative">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
           {/* Left side - Text */}
-          <div className={`flex-1 transition-all duration-1000 ${
+          <div className={`flex-1 text-center lg:text-left transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
-            <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+            <h2 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight px-4 lg:px-0">
               Book Your Free Pest Inspection Today!
             </h2>
           </div>
 
           {/* Right side - Buttons */}
-          <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-1000 delay-300 ${
+          <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 w-full lg:w-auto transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
             <a 
               href="tel:09580574211"
-              className="bg-[#c83232] hover:bg-[#a02828] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center min-w-[200px] cursor-pointer"
+              className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer"
             >
               CALL NOW: 9580574211
             </a>
             <a 
               href="mailto:sales@slmi.in"
-              className="bg-[#c83232] hover:bg-[#a02828] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center min-w-[200px] cursor-pointer"
+              className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer"
             >
               EMAIL: sales@slmi.in
             </a>
