@@ -111,12 +111,13 @@ export function FooterSection() {
                   
                   {/* Phone Number - Large */}
                   <div className="flex items-center justify-center gap-3 text-white mb-6 cursor-pointer hover:text-gray-200 transition-colors duration-200">
-                    <Phone className="w-6 h-6" />
-                    <span className="text-2xl font-bold">9580574211</span>
+                    <Phone className="w-5 h-5" />
+                    <span className="text-base font-bold">9580574211</span>
                   </div>
 
                   {/* Email */}
-                  <div className="text-white/90 mb-6 cursor-pointer hover:text-white transition-colors duration-200">
+                  <div className="flex items-center justify-center gap-3 text-white/90 mb-6 cursor-pointer hover:text-white transition-colors duration-200">
+                    <Mail className="w-5 h-5" />
                     <span className="text-base">sales@slmi.in</span>
                   </div>
 

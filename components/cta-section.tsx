@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { Phone, Mail } from "lucide-react"
 
 export function CtaSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -55,7 +56,9 @@ export function CtaSection() {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
             <h2 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight px-4 lg:px-0">
-              Book Your Free Pest Inspection Today!
+              Book Your Free Pest
+              <br />
+              Inspection Today!
             </h2>
           </div>
 
@@ -65,15 +68,17 @@ export function CtaSection() {
           }`}>
             <a 
               href="tel:09580574211"
-              className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer"
+              className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer gap-2"
             >
-              CALL NOW: 9580574211
+              <Phone className="w-5 h-5" />
+              9580574211
             </a>
             <a 
               href="mailto:sales@slmi.in"
-              className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer"
+              className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer gap-2"
             >
-              EMAIL: sales@slmi.in
+              <Mail className="w-5 h-5" />
+              sales@slmi.in
             </a>
           </div>
         </div>

@@ -105,10 +105,13 @@ export function HeroSection() {
               </div>
 
               {/* Desktop Phone Number */}
-              <div className="hidden md:flex items-center gap-2 text-gray-900 cursor-pointer hover:text-[#c83232] transition-colors duration-200">
-                <Phone className="w-4 h-4 text-[#c83232]" />
-                <span className="text-base font-semibold">9580574211</span>
-              </div>
+              <a 
+                href="tel:+919580574211"
+                className="hidden md:flex flex-col items-center bg-[#c83232] text-white hover:text-[#0a0a0a] px-3 py-2 rounded-lg cursor-pointer transition-colors duration-200"
+              >
+                <span className="text-xs font-medium">Call now</span>
+                <span className="text-sm font-semibold">(+91)-95805-74211</span>
+              </a>
 
               {/* Mobile Menu Button */}
               <button
@@ -156,10 +159,13 @@ export function HeroSection() {
                 
                 {/* Mobile Phone Number */}
                 <div className="pt-3 border-t border-gray-200/50">
-                  <div className="flex items-center gap-3 text-gray-900 cursor-pointer hover:text-[#c83232] transition-colors duration-200">
-                    <Phone className="w-5 h-5 text-[#c83232]" />
-                    <span className="text-base font-semibold">9580574211</span>
-                  </div>
+                  <a 
+                    href="tel:+919580574211"
+                    className="flex flex-col items-center bg-[#c83232] text-white hover:text-[#0a0a0a] px-4 py-3 rounded-lg cursor-pointer w-full transition-colors duration-200"
+                  >
+                    <span className="text-xs font-medium">Call now</span>
+                    <span className="text-sm font-semibold">(+91)-95805-74211</span>
+                  </a>
                 </div>
 
                 {/* Mobile CTA Button */}
@@ -238,10 +244,13 @@ export function HeroSection() {
               </div>
 
               {/* Phone Number - Elegant Style */}
-              <div className="flex items-center justify-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
-                <Phone className="w-5 h-5" />
-                <span className="text-lg font-medium">9580574211</span>
-              </div>
+              <a 
+                href="tel:+919580574211"
+                className="flex flex-col items-center justify-center text-white/80 hover:text-white transition-colors cursor-pointer"
+              >
+                <span className="text-sm font-medium">Call now</span>
+                <span className="text-base font-medium">(+91)-95805-74211</span>
+              </a>
             </div>
           </div>
 
