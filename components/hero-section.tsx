@@ -107,9 +107,9 @@ export function HeroSection() {
               {/* Desktop Phone Number */}
               <a 
                 href="tel:+919580574211"
-                className="hidden md:flex flex-col items-center bg-[#c83232] text-white hover:text-[#0a0a0a] px-3 py-2 rounded-lg cursor-pointer transition-colors duration-200"
+                className="hidden md:flex items-center gap-2 bg-[#c83232] text-white hover:text-[#0a0a0a] px-5 py-2.5 rounded-lg cursor-pointer transition-colors duration-200"
               >
-                <span className="text-xs font-medium">Call now</span>
+                <Phone className="w-4 h-4" />
                 <span className="text-sm font-semibold">(+91)-95805-74211</span>
               </a>
 
@@ -161,9 +161,9 @@ export function HeroSection() {
                 <div className="pt-3 border-t border-gray-200/50">
                   <a 
                     href="tel:+919580574211"
-                    className="flex flex-col items-center bg-[#c83232] text-white hover:text-[#0a0a0a] px-4 py-3 rounded-lg cursor-pointer w-full transition-colors duration-200"
+                    className="flex items-center justify-center gap-2 bg-[#c83232] text-white hover:text-[#0a0a0a] px-5 py-3.5 rounded-lg cursor-pointer w-full transition-colors duration-200"
                   >
-                    <span className="text-xs font-medium">Call now</span>
+                    <Phone className="w-4 h-4" />
                     <span className="text-sm font-semibold">(+91)-95805-74211</span>
                   </a>
                 </div>
@@ -247,9 +247,9 @@ export function HeroSection() {
               {/* Phone Number - Elegant Style */}
               <a 
                 href="tel:+919580574211"
-                className="flex flex-col items-center justify-center text-white/80 hover:text-white transition-colors cursor-pointer"
+                className="flex items-center justify-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer py-1"
               >
-                <span className="text-sm font-medium">Call now</span>
+                <Phone className="w-4 h-4" />
                 <span className="text-base font-medium">(+91)-95805-74211</span>
               </a>
             </div>
