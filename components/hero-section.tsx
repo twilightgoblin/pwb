@@ -67,7 +67,7 @@ export function HeroSection() {
         isNavVisible ? 'translate-y-0' : '-translate-y-full'
       }`}>
         <div className="backdrop-blur-md bg-white/80 border-b border-white/20 shadow-lg">
-          <div className="container mx-auto px-6 py-4">
+          <div className="container mx-auto px-4 sm:px-6 py-4">
             <div className="flex items-center justify-between">
               {/* Logo */}
               <div className="flex items-center gap-2">
@@ -192,14 +192,14 @@ export function HeroSection() {
       <div className="pt-20"></div>
 
       {/* Hero Content */}
-      <div className="container mx-auto px-6 py-6">
+      <div className="container mx-auto px-4 sm:px-6 py-6">
         {/* Black Rounded Container */}
-        <div className="bg-[#0a0a0a] rounded-[4rem] lg:rounded-[4rem] overflow-hidden shadow-2xl h-[82vh] lg:h-[85vh] min-h-[650px]">
+        <div className="bg-[#0a0a0a] rounded-[4rem] lg:rounded-[4rem] overflow-hidden shadow-2xl h-[82vh] lg:h-[85vh] min-h-[600px] sm:min-h-[650px]">
           {/* Mobile Layout */}
           <div className="lg:hidden flex flex-col h-full">
             {/* Image Section */}
-            <div className="relative p-6 pt-8 flex-shrink-0">
-              <div className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden">
+            <div className="relative p-4 sm:p-6 pt-6 sm:pt-8 flex-shrink-0">
+              <div className="relative w-full aspect-[4/3] sm:aspect-[4/3] rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden">
                 <Image
                   src="/professional-pest-control-technician-in-white-prot.jpg"
                   alt="Professional pest control technician in protective gear treating a property"
@@ -211,36 +211,40 @@ export function HeroSection() {
             </div>
 
             {/* Content Section */}
-            <div className="text-white px-8 pb-8 flex flex-col flex-1">
+            <div className="text-white px-4 sm:px-8 pb-6 sm:pb-8 flex flex-col flex-1">
               {/* Rating Badge */}
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center gap-2 mb-4 sm:mb-6">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#c83232] text-[#c83232]" />
+                    <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-[#c83232] text-[#c83232]" />
                   ))}
                 </div>
-                <span className="text-sm text-gray-400 font-medium">500+ ratings</span>
+                <span className="text-xs sm:text-sm text-gray-400 font-medium">500+ ratings</span>
               </div>
 
               {/* Main Headline */}
-              <h1 className="font-[family-name:var(--font-poppins)] text-3xl font-bold leading-tight tracking-tight mb-4">
-                Reliable Pest Control for a Safer Tomorrow
+              <h1 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl font-bold leading-tight tracking-tight mb-3 sm:mb-4">
+                Reliable
+                <br />
+                Pest Control
+                <br />
+                for a Safer Tomorrow
               </h1>
 
               {/* Description */}
-              <p className="text-base text-gray-400 mb-8 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-400 mb-6 sm:mb-8 leading-relaxed">
                 Available 24/7, dedicated to providing effective, eco-friendly pest solutions that protect your family, home, and business from unwanted pests.
               </p>
 
               {/* CTA Button */}
-              <div className="mb-6">
+              <div className="mb-4 sm:mb-6">
                 <Button 
                   size="lg"
-                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-8 h-[48px] text-base font-semibold group w-full cursor-pointer"
+                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-6 sm:px-8 h-[44px] sm:h-[48px] text-sm sm:text-base font-semibold group w-full cursor-pointer"
                   onClick={() => window.location.href = "/contact"}
                 >
                   Book now
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
 
@@ -249,8 +253,8 @@ export function HeroSection() {
                 href="tel:+919580574211"
                 className="flex items-center justify-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer py-1"
               >
-                <Phone className="w-4 h-4" />
-                <span className="text-base font-medium">(+91)-95805-74211</span>
+                <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="text-sm sm:text-base font-medium">(+91)-95805-74211</span>
               </a>
             </div>
           </div>
@@ -271,7 +275,9 @@ export function HeroSection() {
 
               {/* Main Headline - Using Poppins */}
               <h1 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl xl:text-5xl font-bold leading-[1.1] tracking-tight mb-5">
-                Reliable Pest Control
+                Reliable
+                <br />
+                Pest Control
                 <br />
                 for a Safer Tomorrow
               </h1>
