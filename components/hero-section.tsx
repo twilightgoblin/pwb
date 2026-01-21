@@ -347,11 +347,11 @@ export function HeroSection() {
       <div className="border-t border-gray-200 py-4 overflow-hidden bg-gray-50 mt-2">
         <div className="flex animate-marquee whitespace-nowrap">
           {[...Array(3)].map((_, i) => (
-            <div key={i} className="flex items-center gap-10 mx-10">
-              {["Termite Control", "Rodent Control", "Cockroach Control", "Bed Bug Control", "Mosquito Control"].map((service) => (
+            <div key={i} className="flex items-center">
+              {["Termite Control", "Rodent Control", "Cockroach Control", "Bed Bug Control", "Mosquito Control"].map((service, index) => (
                 <span 
-                  key={service} 
-                  className="text-xl font-bold text-gray-400 hover:text-[#c83232] transition-colors duration-300 cursor-pointer"
+                  key={`${service}-${i}`}
+                  className="text-xl font-bold text-gray-400 hover:text-[#c83232] transition-colors duration-300 cursor-pointer mx-5"
                 >
                   {service} •
                 </span>
