@@ -200,14 +200,41 @@ export function HeroSection() {
       <div className="pt-20"></div>
 
       {/* Hero Content */}
-      <div className="container mx-auto px-4 sm:px-6 py-6 lg:py-6">
-        {/* Black Rounded Container - Adjusted for mobile positioning */}
-        <div className="bg-[#0a0a0a] rounded-[4rem] lg:rounded-[4rem] overflow-hidden shadow-2xl h-[84vh] lg:h-[85vh] min-h-[620px] sm:min-h-[650px] -mt-2 lg:mt-0">
-          {/* Mobile Layout */}
+      <div className="container mx-auto px-4 sm:px-6 py-4 lg:py-6">
+        {/* Black Rounded Container - Following site's design patterns */}
+        <div className="bg-[#0a0a0a] rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem] overflow-hidden shadow-2xl min-h-[85vh] lg:h-[85vh]">
+          {/* Mobile Layout - Redesigned for better proportions */}
           <div className="lg:hidden flex flex-col h-full">
-            {/* Image Section - Improved positioning */}
-            <div className="relative p-3 sm:p-4 pt-4 sm:pt-5 flex-shrink-0">
-              <div className="relative w-full aspect-[4/3] sm:aspect-[5/4] rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden shadow-lg">
+            {/* Content Section - Top positioned */}
+            <div className="text-white px-6 sm:px-8 pt-8 sm:pt-10 pb-6 flex flex-col flex-shrink-0">
+              {/* Rating Badge */}
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-[#c83232] text-[#c83232]" />
+                  ))}
+                </div>
+                <span className="text-xs sm:text-sm text-gray-400 font-medium">500+ ratings</span>
+              </div>
+
+              {/* Main Headline */}
+              <h1 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl font-bold leading-tight tracking-tight mb-3">
+                Reliable
+                <br />
+                Pest Control
+                <br />
+                for a Safer Tomorrow
+              </h1>
+
+              {/* Description */}
+              <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed">
+                Available 24/7, dedicated to providing effective, eco-friendly pest solutions that protect your family, home, and business from unwanted pests.
+              </p>
+            </div>
+
+            {/* Image Section - Better positioned and sized */}
+            <div className="relative flex-1 px-6 sm:px-8 pb-6">
+              <div className="relative w-full h-full min-h-[280px] sm:min-h-[320px] rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden shadow-xl">
                 <Image
                   src="/professional-pest-control-technician-in-white-prot.jpg"
                   alt="Professional pest control technician in protective gear treating a property"
@@ -218,51 +245,25 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Content Section - Optimized spacing */}
-            <div className="text-white px-4 sm:px-6 pb-4 sm:pb-6 flex flex-col flex-1 justify-center">
-              {/* Rating Badge */}
-              <div className="flex items-center gap-2 mb-4 sm:mb-6">
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-[#c83232] text-[#c83232]" />
-                  ))}
-                </div>
-                <span className="text-xs sm:text-sm text-gray-400 font-medium">500+ ratings</span>
-              </div>
-
-              {/* Main Headline */}
-              <h1 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl font-bold leading-tight tracking-tight mb-3 sm:mb-4">
-                Reliable
-                <br />
-                Pest Control
-                <br />
-                for a Safer Tomorrow
-              </h1>
-
-              {/* Description */}
-              <p className="text-sm sm:text-base text-gray-400 mb-6 sm:mb-8 leading-relaxed">
-                Available 24/7, dedicated to providing effective, eco-friendly pest solutions that protect your family, home, and business from unwanted pests.
-              </p>
-
+            {/* Bottom Actions */}
+            <div className="text-white px-6 sm:px-8 pb-8 flex flex-col gap-4">
               {/* CTA Button */}
-              <div className="mb-4 sm:mb-6">
-                <Button 
-                  size="lg"
-                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-6 sm:px-8 h-[44px] sm:h-[48px] text-sm sm:text-base font-semibold group w-full cursor-pointer"
-                  onClick={() => window.location.href = "/contact"}
-                >
-                  Book now
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </div>
+              <Button 
+                size="lg"
+                className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-8 h-12 text-base font-semibold group w-full cursor-pointer"
+                onClick={() => window.location.href = "/contact"}
+              >
+                Book now
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
 
-              {/* Phone Number - Elegant Style */}
+              {/* Phone Number */}
               <a 
                 href="tel:+919580574211"
-                className="flex items-center justify-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer py-1"
+                className="flex items-center justify-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer py-2"
               >
-                <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span className="text-sm sm:text-base font-medium">(+91)-95805-74211</span>
+                <Phone className="w-4 h-4" />
+                <span className="text-base font-medium">(+91)-95805-74211</span>
               </a>
             </div>
           </div>
