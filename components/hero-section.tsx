@@ -207,22 +207,37 @@ export function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 py-2 lg:py-6">
         {/* Black Rounded Container - Optimized for mobile viewport */}
         <div className="bg-[#0a0a0a] rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[4rem] overflow-hidden shadow-2xl">
-          {/* Mobile Layout - Redesigned to fit in viewport */}
+          {/* Mobile Layout - Left-aligned with proper image positioning */}
           <div className="lg:hidden">
-            {/* Content Section - Compact layout */}
+            {/* Rating Badge - At the top, left-aligned */}
             <div className="text-white px-5 sm:px-6 pt-6 sm:pt-8 pb-4">
-              {/* Rating Badge */}
-              <div className="flex items-center gap-2 mb-3">
+              <div className="flex items-center justify-start gap-2 mb-4">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 fill-[#c83232] text-[#c83232]" />
+                    <Star key={i} className="w-4 h-4 fill-[#c83232] text-[#c83232]" />
                   ))}
                 </div>
-                <span className="text-xs text-gray-400 font-medium">500+ ratings</span>
+                <span className="text-sm text-gray-400 font-medium">500+ ratings</span>
               </div>
+            </div>
 
-              {/* Main Headline - Reduced size for mobile */}
-              <h1 className="font-[family-name:var(--font-poppins)] text-xl sm:text-2xl font-bold leading-tight tracking-tight mb-3">
+            {/* Image Section - Below ratings, positioned to show main person */}
+            <div className="relative px-5 sm:px-6 pb-5 sm:pb-6">
+              <div className="relative w-full h-[200px] sm:h-[240px] rounded-[1rem] sm:rounded-[1.5rem] overflow-hidden shadow-lg">
+                <Image
+                  src="/professional-pest-control-technician-in-white-prot.jpg"
+                  alt="Professional pest control technician in protective gear treating a property"
+                  fill
+                  className="object-cover object-[center_20%]"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Content Section - Below image, left-aligned */}
+            <div className="text-white px-5 sm:px-6 pb-4">
+              {/* Main Headline - Left-aligned */}
+              <h1 className="font-[family-name:var(--font-poppins)] text-xl sm:text-2xl font-bold leading-tight tracking-tight mb-3 text-left">
                 Reliable
                 <br />
                 Pest Control
@@ -230,45 +245,40 @@ export function HeroSection() {
                 for a Safer Tomorrow
               </h1>
 
-              {/* Description - Shorter for mobile */}
-              <p className="text-sm text-gray-400 mb-4 leading-relaxed">
+              {/* Description - Left-aligned */}
+              <p className="text-sm text-gray-400 mb-4 leading-relaxed text-left">
                 Available 24/7, dedicated to providing effective, eco-friendly pest solutions that protect your family, home, and business.
               </p>
 
-              {/* CTA Button - Moved up */}
-              <Button 
-                size="default"
-                className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-6 h-10 text-sm font-semibold group mb-4 cursor-pointer"
-                onClick={() => window.location.href = "/contact"}
-              >
-                Book now
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
-
-            {/* Image Section - Compact and properly sized */}
-            <div className="relative px-5 sm:px-6 pb-5 sm:pb-6">
-              <div className="relative w-full h-[200px] sm:h-[240px] rounded-[1rem] sm:rounded-[1.5rem] overflow-hidden shadow-lg">
-                <Image
-                  src="/professional-pest-control-technician-in-white-prot.jpg"
-                  alt="Professional pest control technician in protective gear treating a property"
-                  fill
-                  className="object-cover object-center"
-                  priority
-                />
+              {/* CTA Button - Left-aligned */}
+              <div className="flex justify-start mb-4">
+                <Button 
+                  size="default"
+                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-6 h-10 text-sm font-semibold group cursor-pointer"
+                  onClick={() => window.location.href = "/contact"}
+                >
+                  Book now
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
               </div>
             </div>
 
-            {/* Bottom Features - Compact */}
+            {/* Features Section - Standardized mobile version */}
             <div className="text-white px-5 sm:px-6 pb-6">
-              <div className="grid grid-cols-2 gap-3 pt-3 border-t border-white/10">
-                <div>
-                  <h3 className="text-xs text-white font-semibold mb-1">Experienced Professionals</h3>
-                  <p className="text-xs text-gray-400">Certified experts delivering results.</p>
+              <div className="grid grid-cols-1 gap-4 pt-4 border-t border-white/10">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#c83232] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-sm text-white font-semibold mb-1">Experienced Professionals</h3>
+                    <p className="text-xs text-gray-400 leading-relaxed">Certified experts delivering reliable results</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xs text-white font-semibold mb-1">24/7 Availability</h3>
-                  <p className="text-xs text-gray-400">Always ready for emergencies.</p>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-[#c83232] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-sm text-white font-semibold mb-1">24/7 Availability</h3>
+                    <p className="text-xs text-gray-400 leading-relaxed">Always ready for emergency pest control</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -342,15 +352,28 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Mobile Phone Number - Positioned outside the black container */}
-        <div className="lg:hidden mt-4 text-center">
-          <a 
-            href="tel:+919580574211"
-            className="inline-flex items-center gap-2 text-gray-600 hover:text-[#c83232] transition-colors cursor-pointer py-2 px-4 rounded-lg hover:bg-gray-50"
-          >
-            <Phone className="w-4 h-4" />
-            <span className="text-sm font-medium">(+91)-95805-74211</span>
-          </a>
+        {/* Mobile Stats Section - Outside black container */}
+        <div className="lg:hidden mt-4 mb-4">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="text-left">
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">3,000+</p>
+                <p className="text-xs text-gray-600 font-medium">Sites Treated</p>
+              </div>
+              <div className="text-left">
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">8+</p>
+                <p className="text-xs text-gray-600 font-medium">Years Experience</p>
+              </div>
+              <div className="text-left">
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">99.9%</p>
+                <p className="text-xs text-gray-600 font-medium">Success Rate</p>
+              </div>
+              <div className="text-left">
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">24/7</p>
+                <p className="text-xs text-gray-600 font-medium">Support Available</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Stats - Hidden on Mobile */}
