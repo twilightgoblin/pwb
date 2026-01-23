@@ -56,9 +56,9 @@ export function CtaSection() {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
             <h2 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight px-4 lg:px-0">
-              Book Your Free Pest
+              Schedule Your Property
               <br />
-              Inspection Today!
+              Visit Today!
             </h2>
           </div>
 
@@ -67,18 +67,18 @@ export function CtaSection() {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
             <a 
-              href="tel:09580574211"
+              href="tel:+919936931555"
               className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer gap-2"
             >
               <Phone className="w-5 h-5" />
-              (+91)-95805-74211
+              (+91)-99369-31555
             </a>
             <a 
-              href="mailto:sales@slmi.in"
+              href="mailto:propertywalebabu@gmail.com"
               className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer gap-2"
             >
               <Mail className="w-5 h-5" />
-              sales@slmi.in
+              Get Property Info
             </a>
           </div>
         </div>

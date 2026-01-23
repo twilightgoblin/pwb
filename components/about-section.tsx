@@ -40,9 +40,9 @@ export function AboutSection() {
               About Us
             </span>
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl font-bold text-gray-900 mb-4 leading-tight">
-              Trusted Pest Control
+              Trusted Real Estate
               <br />
-              <span className="text-[#c83232]">Since 2017</span>
+              <span className="text-[#c83232]">Since 2019</span>
             </h2>
           </div>
 
@@ -52,10 +52,10 @@ export function AboutSection() {
           }`}>
             <div className="relative w-full h-[400px] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-gray-50 to-gray-100">
               <Image
-                src="/images/pest-control-main.jpg"
-                alt="SLMI Pest Control - Professional pest management services"
+                src="/images/owner.jpeg"
+                alt="PropertyWaleBabu - Professional real estate services in Lucknow"
                 fill
-                className="object-contain"
+                className="object-cover"
               />
             </div>
           </div>
@@ -65,7 +65,7 @@ export function AboutSection() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <p className="text-gray-600 leading-relaxed mb-8 max-w-md mx-auto">
-              Established in 2017, SLMI Pest Control provides residential, commercial, and industrial pest management across Lucknow, Noida, and other major Indian cities using BIS-approved products.
+              Established in 2019, PropertyWaleBabu specializes in premium real estate solutions across Lucknow. We offer ready-to-move flats from 1 BHK to 4 BHK with immediate possession and legal documentation.
             </p>
 
             <Button 
@@ -88,13 +88,13 @@ export function AboutSection() {
               About Us
             </span>
             <h2 className="font-[family-name:var(--font-poppins)] text-4xl xl:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-              Trusted Pest Control
+              Trusted Real Estate
               <br />
-              <span className="text-[#c83232]">Since 2017</span>
+              <span className="text-[#c83232]">Since 2019</span>
             </h2>
             
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
-              Established in 2017, SLMI Pest Control (a division of SLMI Services Private Limited) provides residential, commercial, and industrial pest management across Lucknow, Noida, and other major Indian cities. Our certified technicians follow SOP-driven, child- and pet-safe methods using only BIS-approved products.
+              Established in 2019, PropertyWaleBabu is your trusted partner for premium real estate solutions in Lucknow. We specialize in ready-to-move flats from 1 BHK to 4 BHK across prime locations with immediate possession, complete legal documentation, and world-class amenities that blend elegance with comfort.
             </p>
 
             <Button 
@@ -112,10 +112,10 @@ export function AboutSection() {
           }`}>
             <div className="relative w-full h-[600px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
               <Image
-                src="/images/pest-control-main.jpg"
-                alt="SLMI Pest Control - Professional pest management services"
+                src="/images/owner.jpeg"
+                alt="PropertyWaleBabu - Professional real estate services in Lucknow"
                 fill
-                className="object-contain"
+                className="object-cover"
               />
             </div>
           </div>

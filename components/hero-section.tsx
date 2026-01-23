@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Phone, ArrowRight, Star, Menu, X } from "lucide-react"
+import { Phone, ArrowRight, Star, Menu, X, MapPin, Home, Building } from "lucide-react"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 
@@ -52,9 +52,9 @@ export function HeroSection() {
 
   const navItems = [
     { name: "Home", href: "#" },
-    { name: "Our Services", href: "#hero-services" },
+    { name: "Properties", href: "/properties" },
     { name: "About Us", href: "/about" },
-    { name: "Service Areas", href: "#service-areas-section" },
+    { name: "Locations", href: "#service-areas-section" },
     { name: "Testimonials", href: "#testimonials-section" },
     { name: "FAQS", href: "#faq-section" },
     { name: "Contact Us", href: "/contact" }
@@ -84,13 +84,14 @@ export function HeroSection() {
                 style={{ cursor: 'pointer' }}
               >
                 <Image 
-                  src="/images/slmi.png" 
-                  alt="SLMI Pest Control Services" 
+                  src="/images/logo_cropp.png" 
+                  alt="PropertyWaleBabu - Real Estate Services" 
                   width={40} 
                   height={40} 
                   className="h-8 sm:h-10 w-auto cursor-pointer"
                   priority
                 />
+                <span className="font-bold text-lg text-gray-800 hidden sm:block">PropertyWaleBabu</span>
               </button>
               
               {/* Desktop Navigation */}
@@ -118,11 +119,11 @@ export function HeroSection() {
 
               {/* Desktop Phone Number */}
               <a 
-                href="tel:+919580574211"
+                href="tel:+919936931555"
                 className="hidden lg:flex items-center gap-2 bg-[#c83232] text-white hover:bg-[#a82828] px-4 py-2.5 rounded-lg cursor-pointer transition-all duration-200 flex-shrink-0 shadow-sm hover:shadow-md"
               >
                 <Phone className="w-4 h-4" />
-                <span className="text-sm font-semibold">(+91)-95805-74211</span>
+                <span className="text-sm font-semibold">(+91)-99369-31555</span>
               </a>
 
               {/* Mobile Menu Button */}
@@ -175,22 +176,22 @@ export function HeroSection() {
                 {/* Mobile Actions */}
                 <div className="mt-6 space-y-3">
                   <a 
-                    href="tel:+919580574211"
+                    href="tel:+919936931555"
                     className="flex items-center justify-center gap-2 bg-[#c83232] text-white hover:bg-[#a82828] px-4 py-3 rounded-lg cursor-pointer w-full transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98]"
                   >
                     <Phone className="w-4 h-4" />
-                    <span className="text-sm font-semibold">(+91)-95805-74211</span>
+                    <span className="text-sm font-semibold">(+91)-99369-31555</span>
                   </a>
 
                   <Button 
                     size="default"
                     className="w-full bg-[#c83232] hover:bg-[#a82828] text-white rounded-lg h-12 text-base font-semibold shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.98] cursor-pointer"
                     onClick={() => {
-                      window.location.href = "/contact"
+                      window.location.href = "/properties"
                       setIsMobileMenuOpen(false)
                     }}
                   >
-                    Book Now
+                    View Properties
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </div>
@@ -217,18 +218,18 @@ export function HeroSection() {
                     <Star key={i} className="w-4 h-4 fill-[#c83232] text-[#c83232]" />
                   ))}
                 </div>
-                <span className="text-sm text-gray-400 font-medium">500+ ratings</span>
+                <span className="text-sm text-gray-400 font-medium">500+ happy customers</span>
               </div>
             </div>
 
-            {/* Image Section - Below ratings, positioned to show main person */}
+            {/* Image Section - Below ratings, positioned to show property */}
             <div className="relative px-5 sm:px-6 pb-5 sm:pb-6">
               <div className="relative w-full h-[200px] sm:h-[240px] rounded-[1rem] sm:rounded-[1.5rem] overflow-hidden shadow-lg">
                 <Image
-                  src="/professional-pest-control-technician-in-white-prot.jpg"
-                  alt="Professional pest control technician in protective gear treating a property"
+                  src="/images/hero.gif"
+                  alt="Luxury properties and apartments in Lucknow - PropertyWaleBabu"
                   fill
-                  className="object-cover object-[center_20%]"
+                  className="object-cover object-center"
                   priority
                 />
               </div>
@@ -238,16 +239,16 @@ export function HeroSection() {
             <div className="text-white px-5 sm:px-6 pb-4">
               {/* Main Headline - Left-aligned */}
               <h1 className="font-[family-name:var(--font-poppins)] text-xl sm:text-2xl font-bold leading-tight tracking-tight mb-3 text-left">
-                Reliable
+                Ready-to-Move
                 <br />
-                Pest Control
+                Flats in Lucknow
                 <br />
-                for a Safer Tomorrow
+                <span className="text-[#c83232]">PropertyWaleBabu</span>
               </h1>
 
               {/* Description - Left-aligned */}
               <p className="text-sm text-gray-400 mb-4 leading-relaxed text-left">
-                Available 24/7, dedicated to providing effective, eco-friendly pest solutions that protect your family, home, and business.
+                Explore high-quality apartments from 1 BHK to 4 BHK across prime Lucknow locations — immediate allotment, no waiting.
               </p>
 
               {/* CTA Button - Left-aligned */}
@@ -255,9 +256,9 @@ export function HeroSection() {
                 <Button 
                   size="default"
                   className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-6 h-10 text-sm font-semibold group cursor-pointer"
-                  onClick={() => window.location.href = "/contact"}
+                  onClick={() => window.location.href = "/properties"}
                 >
-                  Book now
+                  View Properties
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
@@ -269,15 +270,15 @@ export function HeroSection() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-[#c83232] rounded-full mt-2 flex-shrink-0"></div>
                   <div className="text-left flex-1">
-                    <h3 className="text-sm text-white font-semibold mb-1">Experienced Professionals</h3>
-                    <p className="text-xs text-gray-400 leading-relaxed">Certified experts delivering reliable results</p>
+                    <h3 className="text-sm text-white font-semibold mb-1">Prime Locations</h3>
+                    <p className="text-xs text-gray-400 leading-relaxed">Properties in Lucknow's best neighborhoods</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-[#c83232] rounded-full mt-2 flex-shrink-0"></div>
                   <div className="text-left flex-1">
-                    <h3 className="text-sm text-white font-semibold mb-1">24/7 Availability</h3>
-                    <p className="text-xs text-gray-400 leading-relaxed">Always ready for emergency pest control</p>
+                    <h3 className="text-sm text-white font-semibold mb-1">Immediate Possession</h3>
+                    <p className="text-xs text-gray-400 leading-relaxed">Ready-to-move flats with instant allotment</p>
                   </div>
                 </div>
               </div>
@@ -295,21 +296,21 @@ export function HeroSection() {
                     <Star key={i} className="w-3 h-3 lg:w-4 lg:h-4 fill-[#c83232] text-[#c83232]" />
                   ))}
                 </div>
-                <span className="text-xs lg:text-sm text-gray-400 font-medium">500+ ratings</span>
+                <span className="text-xs lg:text-sm text-gray-400 font-medium">500+ happy customers</span>
               </div>
 
               {/* Main Headline - Using Poppins */}
               <h1 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-[1.1] tracking-tight mb-4 lg:mb-5">
-                Reliable
+                Ready-to-Move
                 <br />
-                Pest Control
+                Flats in Lucknow
                 <br />
-                for a Safer Tomorrow
+                <span className="text-[#c83232]">PropertyWaleBabu</span>
               </h1>
 
               {/* Description */}
               <p className="text-sm lg:text-base xl:text-lg text-gray-400 mb-6 lg:mb-8 leading-relaxed max-w-xl">
-                Available 24/7, dedicated to providing effective, eco-friendly pest solutions that protect your family, home, and business from unwanted pests.
+                Explore high-quality apartments from 1 BHK to 4 BHK across prime Lucknow locations — immediate allotment, no waiting.
               </p>
 
               {/* CTA Button */}
@@ -317,9 +318,9 @@ export function HeroSection() {
                 <Button 
                   size="lg"
                   className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-6 lg:px-8 h-[44px] lg:h-[48px] text-sm lg:text-base font-semibold group cursor-pointer"
-                  onClick={() => window.location.href = "/contact"}
+                  onClick={() => window.location.href = "/properties"}
                 >
-                  Book now
+                  View Properties
                   <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
@@ -327,12 +328,12 @@ export function HeroSection() {
               {/* Features */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 pt-4 lg:pt-6 border-t border-white/10">
                 <div>
-                  <h3 className="text-xs lg:text-sm text-white font-semibold mb-1">Experienced Professionals</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed">Certified experts delivering reliable results.</p>
+                  <h3 className="text-xs lg:text-sm text-white font-semibold mb-1">Prime Locations</h3>
+                  <p className="text-xs text-gray-400 leading-relaxed">Properties in Lucknow's best neighborhoods.</p>
                 </div>
                 <div>
-                  <h3 className="text-xs lg:text-sm text-white font-semibold mb-1">24/7 Availability</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed">Always ready for emergency pest control.</p>
+                  <h3 className="text-xs lg:text-sm text-white font-semibold mb-1">Immediate Possession</h3>
+                  <p className="text-xs text-gray-400 leading-relaxed">Ready-to-move flats with instant allotment.</p>
                 </div>
               </div>
             </div>
@@ -341,8 +342,8 @@ export function HeroSection() {
             <div className="relative p-3 lg:p-4 xl:p-5 flex items-center">
               <div className="relative w-full h-full rounded-[1.5rem] lg:rounded-[2rem] xl:rounded-[2.2rem] overflow-hidden">
                 <Image
-                  src="/professional-pest-control-technician-in-white-prot.jpg"
-                  alt="Professional pest control technician in protective gear treating a property"
+                  src="/images/hero.gif"
+                  alt="Luxury properties and apartments in Lucknow - PropertyWaleBabu"
                   fill
                   className="object-cover"
                   priority
@@ -357,16 +358,16 @@ export function HeroSection() {
           <div className="container mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-2 gap-4">
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">3,000+</p>
-                <p className="text-xs text-gray-600 font-medium">Sites Treated</p>
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">500+</p>
+                <p className="text-xs text-gray-600 font-medium">Properties Sold</p>
               </div>
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">8+</p>
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">5+</p>
                 <p className="text-xs text-gray-600 font-medium">Years Experience</p>
               </div>
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">99.9%</p>
-                <p className="text-xs text-gray-600 font-medium">Success Rate</p>
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">100%</p>
+                <p className="text-xs text-gray-600 font-medium">Legal Properties</p>
               </div>
               <div className="text-left">
                 <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">24/7</p>
@@ -379,9 +380,9 @@ export function HeroSection() {
         {/* Bottom Stats - Hidden on Mobile */}
         <div className="hidden md:grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mt-6 lg:mt-8 mb-4 max-w-5xl mx-auto">
           {[
-            { value: "3,000+", label: "Sites Treated" },
-            { value: "8+", label: "Years Experience" },
-            { value: "99.9%", label: "Success Rate" },
+            { value: "500+", label: "Properties Sold" },
+            { value: "5+", label: "Years Experience" },
+            { value: "100%", label: "Legal Properties" },
             { value: "24/7", label: "Support Available" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
@@ -392,17 +393,17 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Services Marquee */}
+      {/* Property Types Marquee */}
       <div className="border-t border-gray-200 py-3 lg:py-4 overflow-hidden bg-gray-50 mt-2">
         <div className="flex animate-marquee whitespace-nowrap">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="flex items-center">
-              {["Termite Control", "Rodent Control", "Cockroach Control", "Bed Bug Control", "Mosquito Control"].map((service) => (
+              {["1 BHK Flats", "2 BHK Apartments", "3 BHK Homes", "4 BHK Luxury", "Ready-to-Move"].map((propertyType) => (
                 <span 
-                  key={`${service}-${i}`}
+                  key={`${propertyType}-${i}`}
                   className="text-lg lg:text-xl font-bold text-gray-400 hover:text-[#c83232] transition-colors duration-300 cursor-pointer mx-4 lg:mx-5"
                 >
-                  {service} •
+                  {propertyType} •
                 </span>
               ))}
             </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Phone, ArrowRight, Star, Menu, X, CheckCircle, Users, Target, Award, Bug, Zap, Home, Bed, MousePointer, Hexagon } from "lucide-react"
+import { Phone, ArrowRight, Star, Menu, X, CheckCircle, Users, Target, Award, Home, MapPin, TrendingUp, Shield } from "lucide-react"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import Link from "next/link"
@@ -22,40 +22,40 @@ export function AboutUsPage() {
   }
 
   const stats = [
-    { value: "5,000+", label: "Curated Products" },
-    { value: "800+", label: "Curated Products" },
-    { value: "40+", label: "Product Categories" }
+    { value: "350+", label: "Properties Sold" },
+    { value: "500+", label: "Happy Clients" },
+    { value: "13+", label: "Locations Covered" }
   ]
 
   const services = [
-    { name: "Cockroach Control", icon: <Bug className="w-6 h-6" /> },
-    { name: "Mosquito Control", icon: <Zap className="w-6 h-6" /> }, 
-    { name: "Termite Control", icon: <Home className="w-6 h-6" /> },
-    { name: "Bed Bugs Control", icon: <Bed className="w-6 h-6" /> },
-    { name: "Rodent Control", icon: <MousePointer className="w-6 h-6" /> },
-    { name: "Ant Control", icon: <Hexagon className="w-6 h-6" /> }
+    { name: "Property Buying", icon: <Home className="w-6 h-6" /> },
+    { name: "Property Selling", icon: <TrendingUp className="w-6 h-6" /> }, 
+    { name: "Investment Guidance", icon: <Target className="w-6 h-6" /> },
+    { name: "Market Analysis", icon: <Star className="w-6 h-6" /> },
+    { name: "Legal Assistance", icon: <Shield className="w-6 h-6" /> },
+    { name: "Location Scouting", icon: <MapPin className="w-6 h-6" /> }
   ]
 
   const whyChooseUs = [
     {
-      icon: <Target className="w-6 h-6" />,
-      title: "Nationwide Coverage",
-      description: "With our expanded presence across India, we now offer our comprehensive pest control services to customers in urban and rural areas alike."
+      icon: <Shield className="w-6 h-6" />,
+      title: "RERA Registered",
+      description: "Led by Mukhtar Hashmi, a RERA-registered property consultant (RERA No. – UPRERAAGT21932), ensuring complete legal compliance and transparency."
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Professional Expertise", 
-      description: "Our team consists of skilled technicians and pest control experts who undergo rigorous training and stay updated on the latest techniques and technologies in the industry."
-    },
-    {
-      icon: <Award className="w-6 h-6" />,
-      title: "Cutting-Edge Solutions",
-      description: "We utilize advanced pest control methods and products to ensure effective pest eradication while minimizing environmental impact."
+      title: "Expert Guidance", 
+      description: "Years of experience in Lucknow's real estate market with deep insights into property trends, pricing, and investment opportunities."
     },
     {
       icon: <CheckCircle className="w-6 h-6" />,
-      title: "Customer-Centric Approach",
-      description: "Customer satisfaction is our top priority. We take the time to understand each customer's unique needs and concerns, providing personalized solutions and ongoing support."
+      title: "Transparent Deals",
+      description: "We believe in honest advice and transparent transactions. No hidden costs, no false promises - just genuine guidance you can trust."
+    },
+    {
+      icon: <Target className="w-6 h-6" />,
+      title: "Personalized Service",
+      description: "Every client is unique. We take time to understand your specific needs and provide customized solutions for your property requirements."
     }
   ]
 
@@ -71,20 +71,18 @@ export function AboutUsPage() {
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
             }`}>
               <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-6 block">
-                About Us
+                About PropertyWaleBabu
               </span>
               <h1 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Your Nationwide Pest Control
-                <br />
-                <span className="text-[#c83232]">Solution</span>
+                Helping You Find the <span className="text-[#c83232]">Perfect Home!</span>
               </h1>
               
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-8">
-                We Are At All Over India
+                Your Trusted Property Partner in Lucknow
               </h2>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-10">
-                SLMI Pest Control has proudly expanded its services to cater to the pest control needs of customers across India. With a commitment to excellence and a focus on customer satisfaction, we have established ourselves as a trusted name in the pest control industry nationwide.
+                At PropertyWaleBabu, we believe finding your dream home should be exciting, not stressful. Led by Mukhtar Hashmi, a RERA-registered property consultant (RERA No. – UPRERAAGT21932), we offer honest advice, transparent deals, and expert insights to help you make confident real estate decisions.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 items-start">
@@ -95,15 +93,6 @@ export function AboutUsPage() {
                   Contact Us Today
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                
-                <Button 
-                  variant="outline"
-                  className="border-2 border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white rounded-full px-8 h-14 text-base font-semibold group cursor-pointer"
-                  onClick={() => window.open('tel:9580574211', '_self')}
-                >
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </Button>
               </div>
             </div>
 
@@ -113,8 +102,8 @@ export function AboutUsPage() {
             }`}>
               <div className="relative w-full h-[400px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
                 <Image
-                  src="/images/pest-control-main.jpg"
-                  alt="SLMI Pest Control - Professional pest management services across India"
+                  src="/images/about-us-main.jpeg"
+                  alt="PropertyWaleBabu - Your trusted property consultant in Lucknow"
                   fill
                   className="object-contain"
                   priority
@@ -130,8 +119,11 @@ export function AboutUsPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Numbers Speak For Themselves!
+              Our Track Record Speaks!
             </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              With years of experience and a passion for trust and transparency, we bring you the best properties in Lucknow.
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -147,32 +139,87 @@ export function AboutUsPage() {
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Credentials Section */}
       <section className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
+              Our <span className="text-[#c83232]">Credentials</span> & Recognition
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Certificate */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+              <div className="relative w-full h-64 mb-6 rounded-xl overflow-hidden bg-gray-50">
+                <Image
+                  src="/images/Certificate.jpeg"
+                  alt="PropertyWaleBabu RERA Certificate"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">RERA Certification</h3>
+              <p className="text-gray-600">Official RERA registration ensuring legal compliance and transparency in all transactions.</p>
+            </div>
+
+            {/* Li Image */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+              <div className="relative w-full h-64 mb-6 rounded-xl overflow-hidden bg-gray-50">
+                <Image
+                  src="/images/Li.jpeg"
+                  alt="PropertyWaleBabu Professional Recognition"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Professional Excellence</h3>
+              <p className="text-gray-600">Recognition for outstanding service and professional excellence in real estate consulting.</p>
+            </div>
+
+            {/* Prize Receiving */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+              <div className="relative w-full h-64 mb-6 rounded-xl overflow-hidden bg-gray-50">
+                <Image
+                  src="/images/prize-recieving.jpeg"
+                  alt="PropertyWaleBabu Award Recognition"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Industry Recognition</h3>
+              <p className="text-gray-600">Award recognition for exceptional service and contribution to the real estate industry.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
               Our Mission
             </h2>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
-              Our mission is to provide high-quality pest control services that exceed customer expectations while ensuring the safety and well-being of our clients, their families, and their properties. We strive to deliver effective solutions tailored to the unique needs of each customer, backed by our years of experience and expertise.
+              Our mission is to make real estate transactions transparent, stress-free, and rewarding for every client. We strive to provide honest guidance, market insights, and personalized service that helps you make informed decisions about your property investments. Whether you're buying, selling, or investing — we're here to guide you every step of the way.
             </p>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose SLMI Pest Control?
+              Why Choose PropertyWaleBabu?
             </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {whyChooseUs.map((item, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#c83232]/10 rounded-xl flex items-center justify-center text-[#c83232]">
                     {item.icon}
@@ -189,14 +236,14 @@ export function AboutUsPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Our <span className="text-[#c83232]">Services</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-              SLMI Pest Control offers a <span className="text-[#c83232] font-semibold">wide range</span> of pest management solutions to address various pest infestations, including:
+              PropertyWaleBabu offers a <span className="text-[#c83232] font-semibold">comprehensive range</span> of real estate services to meet all your property needs:
             </p>
           </div>
           
@@ -213,36 +260,36 @@ export function AboutUsPage() {
             </div>
             
             <div className="text-center mt-12">
-              <p className="text-lg text-gray-600 font-medium">and <span className="text-[#c83232] font-semibold">more</span>.</p>
+              <p className="text-lg text-gray-600 font-medium">and <span className="text-[#c83232] font-semibold">much more</span>.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Nationwide Reach Section */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      {/* Experience & Expertise Section */}
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-              <span className="text-[#c83232]">Nationwide</span> Reach
+              <span className="text-[#c83232]">Experience</span> & Market Insights
             </h2>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12">
-              With our expanded network of branches and service centers, we are equipped to serve customers in cities, towns, and remote locations across India. Whether you're in a bustling metropolis or a tranquil countryside, <span className="text-[#c83232] font-semibold">SLMI Pest Control</span> is your trusted partner for pest management solutions.
+              With years of experience in Lucknow's real estate market, we bring you market trends and smart tips to help you make informed decisions. Our deep understanding of local property dynamics ensures you get the best value for your investment.
             </p>
             
-            <div className="bg-white p-8 lg:p-12 rounded-2xl shadow-lg border border-gray-100">
+            <div className="bg-gray-50 p-8 lg:p-12 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Let Us <span className="text-[#c83232]">Protect</span> Your Home and Business
+                Let Us Help You Find Your <span className="text-[#c83232]">Perfect Home</span>
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                At SLMI Pest Control, we understand the importance of protecting your home, business, and loved ones from pests. With our nationwide presence and unwavering commitment to quality, reliability, and customer satisfaction, we are proud to be your <span className="text-[#c83232] font-semibold">premier pest control solution provider</span> across India.
+                At PropertyWaleBabu, we understand that buying or selling a property is one of life's biggest decisions. With our commitment to transparency, expert market knowledge, and personalized service, we make your real estate journey smooth and successful.
               </p>
               
               <h4 className="text-xl font-bold text-gray-900 mb-4">
-                Join Our <span className="text-[#c83232]">Nationwide Network</span>
+                Join Our <span className="text-[#c83232]">Satisfied Clients</span>
               </h4>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Join the thousands of satisfied customers who trust SLMI Pest Control for all their pest management needs. With our nationwide reach and unmatched expertise, we are your <span className="text-[#c83232] font-semibold">reliable partner</span> in pest control, wherever you may be in India.
+                Join hundreds of satisfied clients who have found their dream homes with PropertyWaleBabu. With our expertise in Lucknow's real estate market and commitment to your success, we are your <span className="text-[#c83232] font-semibold">trusted partner</span> in all property matters.
               </p>
             </div>
           </div>
@@ -254,10 +301,10 @@ export function AboutUsPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold mb-6">
-              Contact Us
+              Ready to Find Your Dream Home?
             </h2>
             <p className="text-lg lg:text-xl leading-relaxed mb-10">
-              Experience the difference with SLMI Pest Control. Contact us today to schedule a consultation or service appointment and take the first step towards a pest-free environment, wherever you are in India.
+              Experience the PropertyWaleBabu difference. Contact us today to schedule a consultation and take the first step towards finding your perfect property in Lucknow.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -269,10 +316,6 @@ export function AboutUsPage() {
                 Schedule Consultation
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              
-           
-            
-            
             </div>
           </div>
         </div>

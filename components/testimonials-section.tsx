@@ -44,7 +44,7 @@ export function TestimonialsSection() {
               <span className="text-[#c83232]">Say About Us</span>
             </h2>
             <p className="text-base text-gray-300 leading-relaxed max-w-xl mx-auto">
-              Here's what our satisfied customers across Lucknow, Noida, and other cities have to say about our pest control services.
+              Here's what our satisfied customers across Lucknow and other prime locations have to say about our property services.
             </p>
           </div>
 

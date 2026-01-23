@@ -1,28 +1,23 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Link from "next/link"
 
 const faqs = [
   {
-    question: "How much do your services cost?",
-    answer: "Typical guide rates: Pre-construction ₹5/sqft, Post-construction ₹6/sqft, and Porous Pipe ₹8/sqft. Final pricing depends on layout, access, and infestation. Book a free on-site survey for an exact written quote."
+    question: "What is the first step in the home-buying process?",
+    answer: "Begin with checking available floor plans, confirming allotment norms, and submitting your application under the FCFS process."
   },
   {
-    question: "Do you offer warranties?",
-    answer: "Yes. Warranty terms vary by treatment type and site condition. We provide a written certificate covering service quality and specified re-visits within the warranty window. All terms are listed transparently in the approved scope."
+    question: "How long does it take to move in?",
+    answer: "These projects are ready to move in, so once documentation is complete, you can shift without major delay."
   },
   {
-    question: "How quickly can you respond?",
-    answer: "We operate a 24/7 response desk. In Lucknow city limits, same-day visits are typical. For nearby areas and Noida operations, timelines are shared when you call 9580574211."
+    question: "What does \"First Come, First Serve\" mean in this context?",
+    answer: "Allocation is done on the basis of the order of application/booking – early applicants get priority in the selection of unit type and floor."
   },
   {
-    question: "Are your treatments safe?",
-    answer: "Yes. We use eco-friendly, BIS-approved formulations and share pre/post-treatment safety instructions. Sensitive areas (nurseries, kitchens, pet zones) are handled with extra precautions and targeted application methods to minimize exposure."
-  },
-  {
-    question: "What pests do you treat?",
-    answer: "We offer comprehensive treatments for termites, rodents, cockroaches, mosquitoes, bed bugs, and other common pests with BIS-certified products, SOP-driven service, and 24/7 support."
+    question: "Can we see the flat before booking?",
+    answer: "Yes, you may visit and explore the apartment site and sample flats between Monday and Saturday. You can coordinate with the respective site supervisor."
   }
 ]
 
@@ -71,13 +66,6 @@ export function FaqSection() {
             <h2 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl font-bold text-slate-900 mb-8 leading-tight">
               Everything You Need to Know
             </h2>
-            <Link 
-              href="/faq"
-              className="text-slate-900 font-medium hover:text-[#c83232] transition-colors duration-300 flex items-center gap-2 group cursor-pointer"
-            >
-              All questions 
-              <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
-            </Link>
           </div>
 
           {/* Right Side - FAQ Items */}

@@ -12,18 +12,18 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "SLMI Pest Control - Complete Pest Protection System",
+  title: "PropertyWaleBabu - Ready-to-Move Flats in Lucknow | Luxury Properties for Sale",
   description:
-    "Eco-safe, certified, and guaranteed pest control services. Professional termite, rodent, and cockroach treatments in Lucknow.",
+    "Explore high-quality apartments from 1 BHK to 4 BHK across prime Lucknow locations. Ready-to-move flats with immediate allotment, no waiting. Buy luxury properties in UP.",
   icons: {
     icon: [
-      { url: "/images/slmi.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/slmi.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/logo_cropp.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/logo_cropp.png", sizes: "16x16", type: "image/png" },
     ],
     apple: [
-      { url: "/images/slmi.png", sizes: "180x180", type: "image/png" },
+      { url: "/images/logo_cropp.png", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/images/slmi.png",
+    shortcut: "/images/logo_cropp.png",
   },
 }
 

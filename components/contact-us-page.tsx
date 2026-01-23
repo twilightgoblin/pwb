@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Phone, ArrowRight, Mail, MapPin, Clock, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import dynamic from "next/dynamic"
 
 export function ContactUsPage() {
   const [isVisible, setIsVisible] = useState(false)
@@ -15,31 +14,15 @@ export function ContactUsPage() {
     setIsMounted(true)
   }, [])
 
-  // Dynamic import for Google Form to avoid hydration issues
-  const GoogleForm = dynamic(() => import('./google-form').then(mod => ({ default: mod.GoogleForm })), {
-    ssr: false,
-    loading: () => (
-      <div className="flex items-center justify-center h-full bg-gray-100 rounded-lg" style={{ minHeight: '800px' }}>
-        <p className="text-gray-600">Loading contact form...</p>
-      </div>
-    )
-  })
-
   const handlePhoneCall = () => {
     if (isMounted) {
-      window.open('tel:+919580574211', '_self')
+      window.open('tel:+919936931555', '_self')
     }
   }
 
   const handleEmailClick = () => {
     if (isMounted) {
-      window.open('mailto:info@slmipestcontrol.com', '_self')
-    }
-  }
-
-  const handleScrollToForm = () => {
-    if (isMounted) {
-      document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })
+      window.open('mailto:propertywalebabu@gmail.com', '_self')
     }
   }
 
@@ -47,40 +30,40 @@ export function ContactUsPage() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      details: "(+91)-95805-74211",
-      description: "Available 24/7 for emergency pest control",
+      details: "(+91)-99369-31555",
+      description: "Available for property inquiries",
       action: handlePhoneCall
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us", 
-      details: "info@slmipestcontrol.com",
-      description: "Get detailed quotes and information",
+      details: "propertywalebabu@gmail.com",
+      description: "Get detailed property information",
       action: handleEmailClick
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Visit Us",
-      details: "Lucknow, Uttar Pradesh",
-      description: "Serving across India",
+      details: "Ground Floor, Rohtas Plumeria, Flat No, T-001, near New High Court, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010",
+      description: "Visit our office for consultation",
       action: () => {}
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Working Hours",
-      details: "24/7 Available",
-      description: "Emergency services anytime",
+      details: "Mon-Sat: 9 AM - 7 PM",
+      description: "Sunday by appointment",
       action: () => {}
     }
   ]
 
   const whyContactUs = [
-    "Free property inspection and consultation",
-    "Customized pest control solutions",
-    "Eco-friendly and safe treatments",
-    "Licensed and certified technicians",
-    "Guaranteed results with follow-up support",
-    "Competitive pricing with transparent quotes"
+    "Free property consultation and site visits",
+    "Transparent pricing with no hidden costs",
+    "Legal documentation assistance",
+    "Ready-to-move properties available",
+    "Prime locations in Lucknow",
+    "Trusted real estate services since 2019"
   ]
 
   return (
@@ -100,13 +83,13 @@ export function ContactUsPage() {
                 Contact Us
               </span>
               <h1 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Get Your Free
+                Get Your Dream
                 <br />
-                <span className="text-[#c83232]">Pest Inspection</span>
+                <span className="text-[#c83232]">Property Today</span>
               </h1>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-10">
-                Ready to protect your property from pests? Contact SLMI Pest Control today for professional, eco-friendly pest management solutions. Our certified experts are available 24/7 to help you maintain a pest-free environment.
+                Ready to find your perfect home in Lucknow? Contact PropertyWaleBabu today for premium real estate solutions with transparent pricing and immediate possession. Our expert team is here to help you secure your dream property.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 items-start">
@@ -122,9 +105,10 @@ export function ContactUsPage() {
                 <Button 
                   variant="outline"
                   className="border-2 border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white rounded-full px-8 h-14 text-base font-semibold group cursor-pointer"
-                  onClick={handleScrollToForm}
+                  onClick={handleEmailClick}
                 >
-                  Fill Form Below
+                  <Mail className="w-5 h-5 mr-2" />
+                  Email Us
                 </Button>
               </div>
             </div>
@@ -135,61 +119,12 @@ export function ContactUsPage() {
             }`}>
               <div className="relative w-full h-[400px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
                 <Image
-                  src="/images/pest-control-main.jpg"
-                  alt="SLMI Pest Control - Professional consultation and inspection services"
+                  src="/images/about-us-main.jpeg"
+                  alt="PropertyWaleBabu - Professional real estate consultation and services"
                   fill
                   className="object-contain"
                   priority
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Google Form Section - Moved to Top */}
-      <section id="contact-form" className="py-16 lg:py-24 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Request Your <span className="text-[#c83232]">Free Consultation</span>
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Fill out the form below and our pest control experts will contact you within 24 hours to schedule your free property inspection.
-              </p>
-            </div>
-            
-            {/* Google Form Embed */}
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
-              <div className="p-6 lg:p-8">
-                <GoogleForm />
-              </div>
-            </div>
-            
-            {/* Form Footer */}
-            <div className="text-center mt-8">
-              <p className="text-sm text-gray-600 mb-4">
-                Having trouble with the form? Contact us directly:
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  variant="outline"
-                  className="border-2 border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white rounded-full px-6 h-12 text-sm font-semibold cursor-pointer"
-                  onClick={handlePhoneCall}
-                >
-                  <Phone className="w-4 h-4 mr-2" />
-                  Call: (+91)-95805-74211
-                </Button>
-                
-                <Button 
-                  variant="outline"
-                  className="border-2 border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white rounded-full px-6 h-12 text-sm font-semibold cursor-pointer"
-                  onClick={handleEmailClick}
-                >
-                  <Mail className="w-4 h-4 mr-2" />
-                  Email Us
-                </Button>
               </div>
             </div>
           </div>
@@ -204,7 +139,7 @@ export function ContactUsPage() {
               Multiple Ways to <span className="text-[#c83232]">Reach Us</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Choose the most convenient way to get in touch with our pest control experts
+              Choose the most convenient way to get in touch with our real estate experts
             </p>
           </div>
           
@@ -227,20 +162,85 @@ export function ContactUsPage() {
         </div>
       </section>
 
-      {/* Why Contact Us Section */}
+      {/* Meet Our Team Section */}
       <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="lg:grid lg:grid-cols-2 gap-16 items-center">
+              {/* Left - Image */}
+              <div className={`transition-all duration-1000 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+              }`}>
+                <div className="relative w-full h-[400px] lg:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
+                  <Image
+                    src="/images/owner.jpeg"
+                    alt="PropertyWaleBabu Team - Real Estate Experts"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              {/* Right - Content */}
+              <div className={`mt-12 lg:mt-0 transition-all duration-1000 delay-300 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+              }`}>
+                <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-6 block">
+                  Meet Our Team
+                </span>
+                <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                  Your Trusted <span className="text-[#c83232]">Real Estate Partners</span>
+                </h2>
+                
+                <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                  With over 5 years of experience in Lucknow's real estate market, our dedicated team is committed to helping you find your perfect home. We understand the local market dynamics and provide personalized service to each client.
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#c83232] flex-shrink-0" />
+                    <span className="text-gray-700">Expert knowledge of Lucknow real estate market</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#c83232] flex-shrink-0" />
+                    <span className="text-gray-700">Personalized property recommendations</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#c83232] flex-shrink-0" />
+                    <span className="text-gray-700">End-to-end support from search to possession</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button 
+                    className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-8 h-12 text-base font-semibold group cursor-pointer"
+                    onClick={handlePhoneCall}
+                  >
+                    <Phone className="w-4 h-4 mr-2" />
+                    Schedule a Call
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Contact Us Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose <span className="text-[#c83232]">SLMI Pest Control?</span>
+                Why Choose <span className="text-[#c83232]">PropertyWaleBabu?</span>
               </h2>
               <p className="text-lg text-gray-600">
-                When you contact us, you're choosing India's trusted pest control experts
+                When you contact us, you're choosing Lucknow's trusted real estate experts
               </p>
             </div>
             
-            <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-lg">
+            <div className="bg-gray-50 rounded-2xl p-8 lg:p-12 shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {whyContactUs.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">

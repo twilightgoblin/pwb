@@ -33,15 +33,15 @@ export function FooterSection() {
   const quickLinks = [
     "Home",
     "About Us", 
-    "Our Services",
+    "Properties",
     "Contact Us"
   ]
 
-  const services = [
-    "Termite Control",
-    "Rodent Control",
-    "Bed Bug Control",
-    "Mosquito Control"
+  const propertyTypes = [
+    "1 BHK Apartments",
+    "2 BHK Homes",
+    "3 BHK Residences",
+    "4 BHK Luxury"
   ]
 
   return (
@@ -66,23 +66,23 @@ export function FooterSection() {
                 {/* Logo & Company Name */}
                 <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
                   <Image 
-                    src="/images/slmi.png" 
-                    alt="SLMI Pest Control Services" 
+                    src="/images/logo_cropp.png" 
+                    alt="PropertyWaleBabu - Real Estate Services" 
                     width={50} 
                     height={50} 
                     className="h-10 sm:h-12 w-auto"
                   />
                   <div>
                     <h3 className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl lg:text-2xl font-bold">
-                      SLMI Pest Control
+                      PropertyWaleBabu
                     </h3>
-                    <p className="text-gray-400 text-xs sm:text-sm">Protecting Your Space Since 2016</p>
+                    <p className="text-gray-400 text-xs sm:text-sm">Your Trusted Real Estate Partner Since 2019</p>
                   </div>
                 </div>
 
                 {/* Company Description */}
                 <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 max-w-lg">
-                  We provide reliable, eco-friendly pest management with transparent pricing and a customer-first approach.
+                  We provide premium real estate solutions with transparent pricing, legal documentation, and immediate possession.
                 </p>
 
                 {/* Rating */}
@@ -93,7 +93,7 @@ export function FooterSection() {
                     ))}
                   </div>
                   <span className="text-white font-semibold text-sm sm:text-base">4.9/5</span>
-                  <span className="text-gray-400 text-xs sm:text-sm">(500+ reviews)</span>
+                  <span className="text-gray-400 text-xs sm:text-sm">(500+ happy customers)</span>
                 </div>
               </div>
 
@@ -106,19 +106,19 @@ export function FooterSection() {
                     Contact Us Now!
                   </h3>
                   <p className="text-white/90 mb-4 sm:mb-6 text-sm sm:text-base">
-                    Available 24/7 for pest control needs
+                    Available 24/7 for property inquiries
                   </p>
                   
                   {/* Phone Number - Large */}
                   <div className="flex items-center justify-center gap-2 sm:gap-3 text-white mb-4 sm:mb-6 cursor-pointer hover:text-gray-200 transition-colors duration-200">
                     <Phone className="w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0" />
-                    <span className="text-sm sm:text-base font-bold break-all sm:break-normal">(+91)-95805-74211</span>
+                    <span className="text-sm sm:text-base font-bold break-all sm:break-normal">(+91)-99369-31555</span>
                   </div>
 
                   {/* Email */}
                   <div className="flex items-center justify-center gap-2 sm:gap-3 text-white/90 mb-4 sm:mb-6 cursor-pointer hover:text-white transition-colors duration-200">
                     <Mail className="w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0" />
-                    <span className="text-sm sm:text-base break-all sm:break-normal">sales@slmi.in</span>
+                    <span className="text-sm sm:text-base break-all sm:break-normal">propertywalebabu@gmail.com</span>
                   </div>
 
                   {/* CTA Button */}
@@ -127,8 +127,8 @@ export function FooterSection() {
                     className="w-full bg-white text-[#c83232] hover:bg-gray-100 rounded-full h-10 sm:h-12 text-sm sm:text-base font-semibold cursor-pointer"
                     onClick={() => window.location.href = "/contact"}
                   >
-                    <span className="hidden sm:inline">Book Free Inspection</span>
-                    <span className="sm:hidden">Book Inspection</span>
+                    <span className="hidden sm:inline">Schedule Property Visit</span>
+                    <span className="sm:hidden">View Properties</span>
                     <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4 ml-1 sm:ml-2" />
                   </Button>
                 </div>
@@ -158,19 +158,19 @@ export function FooterSection() {
                 </ul>
               </div>
 
-              {/* Our Services */}
+              {/* Property Types */}
               <div className={`transition-all duration-1000 delay-400 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}>
-                <h4 className="text-white font-semibold text-base sm:text-lg mb-3 sm:mb-4">Our Services</h4>
+                <h4 className="text-white font-semibold text-base sm:text-lg mb-3 sm:mb-4">Property Types</h4>
                 <ul className="space-y-2">
-                  {services.map((service) => (
-                    <li key={service}>
+                  {propertyTypes.map((property) => (
+                    <li key={property}>
                       <a 
                         href="#" 
                         className="text-gray-400 hover:text-white transition-colors duration-200 text-sm cursor-pointer"
                       >
-                        {service}
+                        {property}
                       </a>
                     </li>
                   ))}
@@ -186,24 +186,24 @@ export function FooterSection() {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-4 h-4 text-[#c83232] mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium text-sm">Lucknow, UP</p>
-                      <p className="text-gray-400 text-xs">Serving all areas in Lucknow & Noida</p>
+                      <p className="text-white font-medium text-sm">Ground Floor, Rohtas Plumeria</p>
+                      <p className="text-gray-400 text-xs">Flat No, T-001, near New High Court, Vibhuti Khand, Gomti Nagar, Lucknow, UP 226010</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
                     <Phone className="w-4 h-4 text-[#c83232] mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium text-sm">9580574211</p>
-                      <p className="text-gray-400 text-xs">24/7 Emergency Line</p>
+                      <p className="text-white font-medium text-sm">99369-31555</p>
+                      <p className="text-gray-400 text-xs">Property Helpline</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
                     <Mail className="w-4 h-4 text-[#c83232] mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium text-sm break-all sm:break-normal">sales@slmi.in</p>
-                      <p className="text-gray-400 text-xs">Business Inquiries</p>
+                      <p className="text-white font-medium text-sm break-all sm:break-normal">propertywalebabu@gmail.com</p>
+                      <p className="text-gray-400 text-xs">Property Inquiries</p>
                     </div>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export function FooterSection() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
               <p className="text-gray-400 text-xs sm:text-sm">
-                © 2026 SLMI Pest Control Services. All rights reserved.
+                © 2026 PropertyWaleBabu. All rights reserved.
               </p>
             </div>
           </div>

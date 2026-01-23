@@ -37,9 +37,9 @@ export function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Our Services", href: "/services" },
+    { name: "Properties", href: "/properties" },
     { name: "About Us", href: "/about" },
-    { name: "Service Areas", href: "/#service-areas-section" },
+    { name: "Locations", href: "/#service-areas-section" },
     { name: "Testimonials", href: "/#testimonials-section" },
     { name: "FAQS", href: "/faq" },
     { name: "Contact Us", href: "/contact" }
@@ -55,13 +55,14 @@ export function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity duration-200" style={{ cursor: 'pointer' }}>
               <Image 
-                src="/images/slmi.png" 
-                alt="SLMI Pest Control Services" 
+                src="/images/logo_cropp.png" 
+                alt="PropertyWaleBabu - Real Estate Services" 
                 width={40} 
                 height={40} 
                 className="h-8 sm:h-10 w-auto cursor-pointer"
                 priority
               />
+              <span className="font-bold text-lg text-gray-800 hidden sm:block">PropertyWaleBabu</span>
             </Link>
             
             {/* Desktop Navigation */}
@@ -79,11 +80,11 @@ export function Navbar() {
 
             {/* Desktop Phone Number */}
             <a 
-              href="tel:+919580574211"
+              href="tel:+919936931555"
               className="hidden lg:flex flex-col items-center bg-[#c83232] text-white hover:bg-[#a82828] px-3 py-2 rounded-lg cursor-pointer transition-colors duration-200 flex-shrink-0"
             >
               <span className="text-xs font-medium">Call now</span>
-              <span className="text-sm font-semibold">(+91)-95805-74211</span>
+              <span className="text-sm font-semibold">(+91)-99369-31555</span>
             </a>
 
             {/* Mobile Menu Button */}
@@ -124,21 +125,21 @@ export function Navbar() {
               
               <div className="mt-6 space-y-3">
                 <a 
-                  href="tel:+919580574211"
+                  href="tel:+919936931555"
                   className="flex items-center justify-center bg-gray-100 text-gray-800 hover:bg-gray-200 px-4 py-3 rounded-lg cursor-pointer w-full transition-colors duration-200"
                 >
-                  <span className="text-sm font-semibold">(+91)-95805-74211</span>
+                  <span className="text-sm font-semibold">(+91)-99369-31555</span>
                 </a>
                 
                 <Button 
                   size="default"
                   className="w-full bg-[#c83232] hover:bg-[#a82828] text-white rounded-lg h-12 text-base font-semibold"
                   onClick={() => {
-                    window.location.href = "/contact"
+                    window.location.href = "/properties"
                     setIsMobileMenuOpen(false)
                   }}
                 >
-                  Book Now
+                  View Properties
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>
