@@ -145,8 +145,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ position, testimonial
       className={cn(
         "absolute left-1/2 top-1/2 cursor-pointer border-2 p-8 transition-all duration-500 ease-in-out",
         isCenter 
-          ? "z-10 bg-[#c83232] text-white border-[#c83232] shadow-2xl" 
-          : "z-0 bg-white text-gray-900 border-gray-200 hover:border-[#c83232]/50 shadow-xl"
+          ? "z-10 bg-[#7B2CBF] text-white border-[#7B2CBF] shadow-2xl" 
+          : "z-0 bg-white text-gray-900 border-gray-200 hover:border-[#7B2CBF]/50 shadow-xl"
       )}
       style={{
         width: cardSize,
@@ -156,7 +156,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ position, testimonial
           isCenter ? -65 : position % 2 ? 15 : -15
         }px) rotate(${isCenter ? 0 : position % 2 ? 2.5 : -2.5}deg)`,
         boxShadow: isCenter 
-          ? "0px 12px 0px 6px rgba(200, 50, 50, 0.3), 0px 20px 40px rgba(0, 0, 0, 0.3)" 
+          ? "0px 12px 0px 6px rgba(123, 44, 191, 0.3), 0px 20px 40px rgba(0, 0, 0, 0.3)" 
           : "0px 8px 30px rgba(0, 0, 0, 0.2)"
       }}
     >
@@ -256,8 +256,8 @@ export const StaggerTestimonials: React.FC = () => {
           onClick={() => handleMove(-1)}
           className={cn(
             "flex h-14 w-14 items-center justify-center text-2xl transition-colors cursor-pointer",
-            "bg-white border-2 border-white/20 hover:bg-[#c83232] hover:text-white hover:border-[#c83232] text-gray-700",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c83232] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            "bg-white border-2 border-white/20 hover:bg-[#7B2CBF] hover:text-white hover:border-[#7B2CBF] text-gray-700",
+            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7B2CBF] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           )}
           aria-label="Previous testimonial"
         >
@@ -267,8 +267,8 @@ export const StaggerTestimonials: React.FC = () => {
           onClick={() => handleMove(1)}
           className={cn(
             "flex h-14 w-14 items-center justify-center text-2xl transition-colors cursor-pointer",
-            "bg-white border-2 border-white/20 hover:bg-[#c83232] hover:text-white hover:border-[#c83232] text-gray-700",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c83232] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            "bg-white border-2 border-white/20 hover:bg-[#7B2CBF] hover:text-white hover:border-[#7B2CBF] text-gray-700",
+            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7B2CBF] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           )}
           aria-label="Next testimonial"
         >

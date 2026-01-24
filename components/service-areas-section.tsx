@@ -43,13 +43,13 @@ export function ServiceAreasSection() {
         <div className={`text-center mb-8 lg:mb-12 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
-          <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-3 block">
+          <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-3 block">
             Prime Locations
           </span>
           <h2 className="font-[family-name:var(--font-poppins)] text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-4 leading-tight px-4">
             Properties Available Across
             <br />
-            <span className="text-[#c83232]">Lucknow's Best Areas</span>
+            <span className="text-[#7B2CBF]">Lucknow's Best Areas</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-2xl mx-auto px-4">
             Premium residential properties in Lucknow's most sought-after neighborhoods. 
@@ -66,13 +66,13 @@ export function ServiceAreasSection() {
             {locations.map((location, index) => (
               <div 
                 key={location}
-                className={`bg-white rounded-xl p-3 sm:p-4 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:border-[#c83232]/20 cursor-pointer ${
+                className={`bg-white rounded-xl p-3 sm:p-4 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:border-[#7B2CBF]/20 cursor-pointer ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
                 style={{ transitionDelay: `${400 + index * 100}ms` }}
               >
                 <div className="flex items-center space-x-2 sm:space-x-3">
-                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#c83232] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#E6C87A] flex-shrink-0" />
                   <span className="text-gray-800 font-medium text-xs sm:text-sm">{location}</span>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export function ServiceAreasSection() {
             </div>
 
             {/* Expansion Highlight - Better mobile layout */}
-            <div className={`bg-gradient-to-r from-[#b52f2f] via-[#c83232] to-[#b52f2f] rounded-2xl p-4 sm:p-6 text-white transition-all duration-1000 delay-900 ${
+            <div className={`bg-gradient-to-r from-[#7B2CBF] via-[#7B2CBF] to-[#7B2CBF] rounded-2xl p-4 sm:p-6 text-white transition-all duration-1000 delay-900 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
               <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-2">

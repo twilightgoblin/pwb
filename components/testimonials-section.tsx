@@ -30,20 +30,20 @@ export function TestimonialsSection() {
       {/* White padding/corners around the black area */}
       <div className="container mx-auto px-6 relative">
         {/* Black rounded container for testimonials */}
-        <div className="bg-[#0a0a0a] rounded-[3rem] lg:rounded-[3rem] overflow-hidden shadow-2xl py-12 lg:py-16">
+        <div className="bg-[#121212] rounded-[3rem] lg:rounded-[3rem] overflow-hidden shadow-2xl py-12 lg:py-16">
           {/* Header inside black area */}
           <div className={`text-center mb-12 px-6 lg:px-12 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-3 block">
+            <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-3 block">
               Testimonials
             </span>
             <h2 className="font-[family-name:var(--font-poppins)] text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-4 leading-tight">
               What Our Customers
               <br />
-              <span className="text-[#c83232]">Say About Us</span>
+              <span className="text-[#7B2CBF]">Say About Us</span>
             </h2>
-            <p className="text-base text-gray-300 leading-relaxed max-w-xl mx-auto">
+            <p className="text-base text-[#9CA3AF] leading-relaxed max-w-xl mx-auto">
               Here's what our satisfied customers across Lucknow and other prime locations have to say about our property services.
             </p>
           </div>

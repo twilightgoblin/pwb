@@ -25,7 +25,7 @@ export function CtaSection() {
   return (
     <section 
       id="cta-section"
-      className="relative bg-black py-16 lg:py-20 overflow-hidden"
+      className="relative bg-[#121212] py-16 lg:py-20 overflow-hidden"
     >
       {/* Geometric background pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -55,7 +55,7 @@ export function CtaSection() {
           <div className={`flex-1 text-center lg:text-left transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
-            <h2 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight px-4 lg:px-0">
+            <h2 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#F7F7F7] leading-tight px-4 lg:px-0">
               Schedule Your Property
               <br />
               Visit Today!
@@ -68,14 +68,14 @@ export function CtaSection() {
           }`}>
             <a 
               href="tel:+919936931555"
-              className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer gap-2"
+              className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-[#F7F7F7] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer gap-2"
             >
               <Phone className="w-5 h-5" />
               (+91)-99369-31555
             </a>
             <a 
               href="mailto:propertywalebabu@gmail.com"
-              className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer gap-2"
+              className="bg-[#E6C87A] hover:bg-[#D4B866] text-[#121212] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center cursor-pointer gap-2"
             >
               <Mail className="w-5 h-5" />
               Get Property Info

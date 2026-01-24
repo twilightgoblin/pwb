@@ -60,7 +60,7 @@ export function FaqSection() {
           <div className={`transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <div className="text-[#c83232] text-sm font-semibold tracking-wider uppercase mb-4">
+            <div className="text-[#7B2CBF] text-sm font-semibold tracking-wider uppercase mb-4">
               FAQ
             </div>
             <h2 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl font-bold text-slate-900 mb-8 leading-tight">
@@ -85,7 +85,7 @@ export function FaqSection() {
                     onClick={() => toggleItem(index)}
                     className="w-full py-6 text-left flex items-center justify-between group hover:bg-slate-50/50 transition-colors duration-300 rounded-lg px-4 cursor-pointer"
                   >
-                    <h3 className="font-medium text-slate-900 text-lg pr-8 leading-relaxed group-hover:text-[#c83232] transition-colors duration-300">
+                    <h3 className="font-medium text-slate-900 text-lg pr-8 leading-relaxed group-hover:text-[#7B2CBF] transition-colors duration-300">
                       {faq.question}
                     </h3>
                     <div className="flex-shrink-0">
@@ -93,8 +93,8 @@ export function FaqSection() {
                         isOpen ? 'rotate-45' : ''
                       }`}>
                         <div className="relative">
-                          <div className="w-4 h-0.5 bg-slate-400 group-hover:bg-[#c83232] transition-colors duration-300" />
-                          <div className={`w-0.5 h-4 bg-slate-400 group-hover:bg-[#c83232] transition-colors duration-300 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
+                          <div className="w-4 h-0.5 bg-slate-400 group-hover:bg-[#7B2CBF] transition-colors duration-300" />
+                          <div className={`w-0.5 h-4 bg-slate-400 group-hover:bg-[#7B2CBF] transition-colors duration-300 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
                             isOpen ? 'opacity-0' : 'opacity-100'
                           }`} />
                         </div>

@@ -8,7 +8,7 @@ import Link from "next/link"
 
 // Property Type Icons with round backgrounds
 const OneBHKIcon = () => (
-  <div className="w-12 h-12 bg-gradient-to-br from-[#c83232] to-[#a02828] rounded-full flex items-center justify-center shadow-lg">
+  <div className="w-12 h-12 bg-gradient-to-br from-[#7B2CBF] to-[#6A1FA3] rounded-full flex items-center justify-center shadow-lg">
     <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
       {/* House outline */}
       <path d="M3 12L12 3L21 12V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V12Z" stroke="white" strokeWidth="2" fill="none"/>
@@ -23,7 +23,7 @@ const OneBHKIcon = () => (
 )
 
 const TwoBHKIcon = () => (
-  <div className="w-12 h-12 bg-gradient-to-br from-[#c83232] to-[#a02828] rounded-full flex items-center justify-center shadow-lg">
+  <div className="w-12 h-12 bg-gradient-to-br from-[#7B2CBF] to-[#6A1FA3] rounded-full flex items-center justify-center shadow-lg">
     <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
       {/* House outline */}
       <path d="M3 12L12 3L21 12V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V12Z" stroke="white" strokeWidth="2" fill="none"/>
@@ -39,7 +39,7 @@ const TwoBHKIcon = () => (
 )
 
 const ThreeBHKIcon = () => (
-  <div className="w-12 h-12 bg-gradient-to-br from-[#c83232] to-[#a02828] rounded-full flex items-center justify-center shadow-lg">
+  <div className="w-12 h-12 bg-gradient-to-br from-[#7B2CBF] to-[#6A1FA3] rounded-full flex items-center justify-center shadow-lg">
     <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
       {/* Building outline */}
       <rect x="4" y="6" width="16" height="15" stroke="white" strokeWidth="2" fill="none"/>
@@ -58,7 +58,7 @@ const ThreeBHKIcon = () => (
 )
 
 const LuxuryIcon = () => (
-  <div className="w-12 h-12 bg-gradient-to-br from-[#c83232] to-[#a02828] rounded-full flex items-center justify-center shadow-lg">
+  <div className="w-12 h-12 bg-gradient-to-br from-[#7B2CBF] to-[#6A1FA3] rounded-full flex items-center justify-center shadow-lg">
     <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
       {/* Luxury building */}
       <rect x="3" y="8" width="18" height="13" stroke="white" strokeWidth="2" fill="none"/>
@@ -137,13 +137,13 @@ export function HeroProperties() {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-3 block">
+            <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-3 block">
               Our Properties
             </span>
             <h2 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 lg:mb-6 leading-tight">
               Buy Lucknow Properties:
               <br />
-              <span className="text-[#c83232]">Luxury Property for Sale in UP</span>
+              <span className="text-[#7B2CBF]">Luxury Property for Sale in UP</span>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
               Experience the pinnacle of luxury with buying a property in Lucknow, where stunning architecture meets world-class amenities.
@@ -192,7 +192,7 @@ export function HeroProperties() {
                 <div className="text-left">
                   <Link 
                     href="/properties"
-                    className="inline-flex items-center text-[#c83232] hover:text-[#a02828] font-medium text-sm transition-colors group"
+                    className="inline-flex items-center text-[#7B2CBF] hover:text-[#6A1FA3] font-medium text-sm transition-colors group"
                   >
                     View Properties
                     <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
@@ -209,7 +209,7 @@ export function HeroProperties() {
         }`}>
           <Link href="/properties">
             <Button 
-              className="bg-[#c83232] hover:bg-[#a02828] text-white font-semibold px-8 py-3 rounded-xl group cursor-pointer"
+              className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white font-semibold px-8 py-3 rounded-xl group cursor-pointer"
             >
               View All Properties
               <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />

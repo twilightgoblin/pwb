@@ -71,7 +71,7 @@ export function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 whitespace-nowrap"
+                  className="text-sm font-medium text-gray-700 hover:text-[#7B2CBF] transition-colors duration-200 whitespace-nowrap"
                 >
                   {item.name}
                 </Link>
@@ -81,7 +81,7 @@ export function Navbar() {
             {/* Desktop Phone Number */}
             <a 
               href="tel:+919936931555"
-              className="hidden lg:flex flex-col items-center bg-[#c83232] text-white hover:bg-[#a82828] px-3 py-2 rounded-lg cursor-pointer transition-colors duration-200 flex-shrink-0"
+              className="hidden lg:flex flex-col items-center bg-[#7B2CBF] text-[#F7F7F7] hover:bg-[#6A1FA3] px-3 py-2 rounded-lg cursor-pointer transition-colors duration-200 flex-shrink-0"
             >
               <span className="text-xs font-medium">Call now</span>
               <span className="text-sm font-semibold">(+91)-99369-31555</span>
@@ -115,7 +115,7 @@ export function Navbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#c83232] hover:bg-gray-50 transition-colors duration-200 py-3 px-3 rounded-lg"
+                    className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#7B2CBF] hover:bg-gray-50 transition-colors duration-200 py-3 px-3 rounded-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -133,7 +133,7 @@ export function Navbar() {
                 
                 <Button 
                   size="default"
-                  className="w-full bg-[#c83232] hover:bg-[#a82828] text-white rounded-lg h-12 text-base font-semibold"
+                  className="w-full bg-[#7B2CBF] hover:bg-[#6A1FA3] text-[#F7F7F7] rounded-lg h-12 text-base font-semibold"
                   onClick={() => {
                     window.location.href = "/properties"
                     setIsMobileMenuOpen(false)

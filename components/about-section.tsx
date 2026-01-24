@@ -36,13 +36,13 @@ export function AboutSection() {
           <div className={`text-center mb-8 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-4 block">
+            <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-4 block">
               About Us
             </span>
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl font-bold text-gray-900 mb-4 leading-tight">
               Trusted Real Estate
               <br />
-              <span className="text-[#c83232]">Since 2019</span>
+              <span className="text-[#7B2CBF]">Since 2019</span>
             </h2>
           </div>
 
@@ -69,7 +69,7 @@ export function AboutSection() {
             </p>
 
             <Button 
-              className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-8 h-12 font-semibold group cursor-pointer"
+              className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-full px-8 h-12 font-semibold group cursor-pointer"
               onClick={() => window.location.href = '/about'}
             >
               Learn More About Us
@@ -84,13 +84,13 @@ export function AboutSection() {
           <div className={`transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
-            <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-6 block">
+            <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-6 block">
               About Us
             </span>
             <h2 className="font-[family-name:var(--font-poppins)] text-4xl xl:text-5xl font-bold text-gray-900 mb-8 leading-tight">
               Trusted Real Estate
               <br />
-              <span className="text-[#c83232]">Since 2019</span>
+              <span className="text-[#7B2CBF]">Since 2019</span>
             </h2>
             
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -98,7 +98,7 @@ export function AboutSection() {
             </p>
 
             <Button 
-              className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-10 h-14 font-semibold group cursor-pointer"
+              className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-full px-10 h-14 font-semibold group cursor-pointer"
               onClick={() => window.location.href = '/about'}
             >
               Learn More About Us

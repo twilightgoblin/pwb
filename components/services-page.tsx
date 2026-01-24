@@ -128,19 +128,19 @@ export function ServicesPage() {
           {/* Main Hero */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
             <div className="px-4 lg:px-0">
-              <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-4 block">
+              <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-4 block">
                 Advanced Protection
               </span>
               <h2 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Protect Your Property with Advanced
                 <br />
-                <span className="text-[#c83232]">Anti Termite Reticulation System</span>
+                <span className="text-[#7B2CBF]">Anti Termite Reticulation System</span>
               </h2>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
                 At SLMI Pest Control, we specialize in anti termite reticulation system and innovative pest management solutions to ensure your home or business remains pest-free. Our commitment to excellence, eco-friendly practices, and cutting-edge technology make us the go-to choice for termite and pest control in Lucknow and beyond.
               </p>
               <Button 
-                className="bg-[#c83232] hover:bg-[#a02828] text-white px-6 sm:px-8 py-3 rounded-xl font-semibold group w-full sm:w-auto"
+                className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white px-6 sm:px-8 py-3 rounded-xl font-semibold group w-full sm:w-auto"
                 onClick={() => window.location.href = "/contact"}
               >
                 Get Free Inspection
@@ -174,7 +174,7 @@ export function ServicesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {antiTermiteFeatures.map((feature, index) => (
                 <div key={index} className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-[#c83232] mr-3 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#E6C87A] mr-3 flex-shrink-0" />
                   <span className="text-gray-700">{feature}</span>
                 </div>
               ))}
@@ -203,7 +203,7 @@ export function ServicesPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Anti Termite Piping Systems: <span className="text-[#c83232]">The Future of Termite Protection</span>
+                Anti Termite Piping Systems: <span className="text-[#7B2CBF]">The Future of Termite Protection</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Our anti termite piping systems are designed to offer robust and efficient termite management solutions. Whether it's a pre-construction anti termite treatment or post-construction termite control, SLMI Pest Control ensures maximum protection.
@@ -217,7 +217,7 @@ export function ServicesPage() {
               <div className="space-y-4">
                 {pipingSystemFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-[#c83232] mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#E6C87A] mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-lg">{feature}</span>
                   </div>
                 ))}
@@ -233,7 +233,7 @@ export function ServicesPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Pre-Construction Anti Termite Treatment: <span className="text-[#c83232]">A Smart Investment</span>
+                Pre-Construction Anti Termite Treatment: <span className="text-[#7B2CBF]">A Smart Investment</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Did you know that termites can cause extensive structural damage if not addressed early? Our pre-construction anti termite treatment ensures your property is termite-free from the ground up.
@@ -247,7 +247,7 @@ export function ServicesPage() {
               <div className="space-y-4">
                 {preConstructionBenefits.map((benefit, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-[#c83232] mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#E6C87A] mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-lg">{benefit}</span>
                   </div>
                 ))}
@@ -263,7 +263,7 @@ export function ServicesPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Anti Termite Soil Treatment: <span className="text-[#c83232]">Protecting the Foundation</span>
+                Anti Termite Soil Treatment: <span className="text-[#7B2CBF]">Protecting the Foundation</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 For properties that require comprehensive protection, we offer anti termite soil treatment. This involves treating the soil beneath and around your structure to create an effective termite barrier.
@@ -277,7 +277,7 @@ export function ServicesPage() {
               <div className="space-y-4">
                 {soilTreatmentFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-[#c83232] mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#E6C87A] mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-lg">{feature}</span>
                   </div>
                 ))}
@@ -292,7 +292,7 @@ export function ServicesPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Other <span className="text-[#c83232]">Pest Control Services</span>
+              Our Other <span className="text-[#7B2CBF]">Pest Control Services</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Comprehensive solutions for all your pest control needs
@@ -333,7 +333,7 @@ export function ServicesPage() {
                     <div className="grid grid-cols-1 gap-2">
                       {service.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center text-xs sm:text-sm text-gray-700">
-                          <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-[#c83232] mr-2 flex-shrink-0" />
+                          <CheckCircle className="w-5 h-5 text-[#E6C87A] mr-2 flex-shrink-0" />
                           {feature}
                         </div>
                       ))}
@@ -357,7 +357,7 @@ export function ServicesPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Why SLMI Pest Control is Your <span className="text-[#c83232]">Trusted Partner</span>
+              Why SLMI Pest Control is Your <span className="text-[#7B2CBF]">Trusted Partner</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Established in 2017, SLMI Pest Control has become a leader in pest management across India. Here's why thousands trust us:
@@ -369,8 +369,8 @@ export function ServicesPage() {
               <Card key={index} className={`text-center p-4 sm:p-6 lg:p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-500 bg-white ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`} style={{ transitionDelay: `${index * 100}ms` }}>
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#c83232]/10 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                  <item.icon className="w-6 h-6 sm:w-8 sm:h-8 text-[#c83232]" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#7B2CBF]/10 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                  <item.icon className="w-6 h-6 sm:w-8 sm:h-8 text-[#7B2CBF]" />
                 </div>
                 <h3 className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
                   {item.title}
@@ -392,7 +392,7 @@ export function ServicesPage() {
               <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Our Cutting-Edge Solutions
               </h2>
-              <h3 className="text-2xl font-bold text-[#c83232] mb-6">
+              <h3 className="text-2xl font-bold text-[#7B2CBF] mb-6">
                 Porous Pipe System for Termite Treatment
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -407,7 +407,7 @@ export function ServicesPage() {
               <div className="space-y-4">
                 {["Hassle-free installation", "Long-term protection", "Minimal maintenance requirements"].map((feature, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-[#c83232] mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#E6C87A] mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-lg">{feature}</span>
                   </div>
                 ))}

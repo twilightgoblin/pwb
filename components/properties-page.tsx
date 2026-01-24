@@ -121,11 +121,11 @@ export function PropertiesPage() {
           <div className={`text-center max-w-4xl mx-auto transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-4 block">
+            <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-4 block">
               Premium Properties in Lucknow
             </span>
             <h1 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-              Find Your <span className="text-[#c83232]">Dream Home</span> Today
+              Find Your <span className="text-[#7B2CBF]">Dream Home</span> Today
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
               Discover premium ready-to-move flats and apartments across Lucknow's most sought-after locations. From 1 BHK to 3 BHK, find the perfect home that matches your lifestyle and budget.
@@ -133,7 +133,7 @@ export function PropertiesPage() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
-                className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
+                className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
                 onClick={() => window.location.href = "/contact"}
               >
                 Schedule Site Visit
@@ -154,7 +154,7 @@ export function PropertiesPage() {
                 onClick={() => setActiveFilter(option.value)}
                 className={`px-4 lg:px-6 py-2.5 lg:py-3 rounded-full font-semibold text-sm lg:text-base transition-all duration-300 cursor-pointer ${
                   activeFilter === option.value
-                    ? 'bg-[#c83232] text-white shadow-lg'
+                    ? 'bg-[#7B2CBF] text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -186,13 +186,13 @@ export function PropertiesPage() {
                     className="object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-[#c83232] text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-[#7B2CBF] text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {property.bhk}
                     </span>
                   </div>
                   <div className="absolute top-4 right-4">
                     <div className="flex items-center gap-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full">
-                      <Star className="w-3 h-3 fill-[#c83232] text-[#c83232]" />
+                      <Star className="w-4 h-4 fill-[#E6C87A] text-[#E6C87A]" />
                       <span className="text-xs font-semibold text-gray-800">Premium</span>
                     </div>
                   </div>
@@ -200,35 +200,35 @@ export function PropertiesPage() {
 
                 <CardContent className="p-6">
                   {/* Property Title */}
-                  <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-gray-900 mb-2 group-hover:text-[#c83232] transition-colors">
+                  <h3 className="font-[family-name:var(--font-poppins)] text-xl font-bold text-gray-900 mb-2 group-hover:text-[#7B2CBF] transition-colors">
                     {property.title}
                   </h3>
 
                   {/* Location */}
                   <div className="flex items-center gap-2 text-gray-600 mb-4">
-                    <MapPin className="w-4 h-4 text-[#c83232]" />
+                    <MapPin className="w-4 h-4 text-[#7B2CBF]" />
                     <span className="text-sm">{property.location}</span>
                   </div>
 
                   {/* Property Details */}
                   <div className="grid grid-cols-3 gap-4 mb-4 py-4 bg-gray-50 rounded-lg">
                     <div className="text-center">
-                      <Bed className="w-5 h-5 text-[#c83232] mx-auto mb-1" />
+                      <Bed className="w-5 h-5 text-[#7B2CBF] mx-auto mb-1" />
                       <p className="text-xs text-gray-600 font-medium">{property.bhk}</p>
                     </div>
                     <div className="text-center">
-                      <Square className="w-5 h-5 text-[#c83232] mx-auto mb-1" />
+                      <Square className="w-5 h-5 text-[#7B2CBF] mx-auto mb-1" />
                       <p className="text-xs text-gray-600 font-medium">{property.sqft}</p>
                     </div>
                     <div className="text-center">
-                      <IndianRupee className="w-5 h-5 text-[#c83232] mx-auto mb-1" />
+                      <IndianRupee className="w-5 h-5 text-[#7B2CBF] mx-auto mb-1" />
                       <p className="text-xs text-gray-600 font-medium">Price</p>
                     </div>
                   </div>
 
                   {/* Price */}
                   <div className="mb-4">
-                    <p className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-[#c83232] flex items-center">
+                    <p className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-[#7B2CBF] flex items-center">
                       <IndianRupee className="w-5 h-5 mr-1" />
                       {property.price.replace('₹', '')}
                     </p>
@@ -246,7 +246,7 @@ export function PropertiesPage() {
                     <div className="grid grid-cols-2 gap-1">
                       {property.features.slice(0, 4).map((feature, idx) => (
                         <div key={idx} className="flex items-center text-xs text-gray-700">
-                          <CheckCircle className="w-3 h-3 text-[#c83232] mr-1 flex-shrink-0" />
+                          <CheckCircle className="w-5 h-5 text-[#E6C87A] mr-1 flex-shrink-0" />
                           <span className="truncate">{feature}</span>
                         </div>
                       ))}
@@ -256,7 +256,7 @@ export function PropertiesPage() {
                   {/* Action Button - Single Contact Us button */}
                   <div className="flex">
                     <Button 
-                      className="w-full bg-[#c83232] hover:bg-[#a82828] text-white rounded-lg h-10 text-sm font-semibold cursor-pointer"
+                      className="w-full bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-lg h-10 text-sm font-semibold cursor-pointer"
                       onClick={() => window.location.href = "/contact"}
                     >
                       Contact Us
@@ -270,7 +270,7 @@ export function PropertiesPage() {
           {/* No Properties Found */}
           {filteredProperties.length === 0 && (
             <div className="text-center py-16">
-              <Home className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+              <Home className="w-16 h-16 text-[#9CA3AF] mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-600 mb-2">No Properties Found</h3>
               <p className="text-gray-500">Try adjusting your filters to see more properties.</p>
             </div>
@@ -292,24 +292,24 @@ export function PropertiesPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#c83232]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-8 h-8 text-[#c83232]" />
+              <div className="w-16 h-16 bg-[#7B2CBF]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="w-5 h-5 text-[#E6C87A]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">RERA Registered</h3>
               <p className="text-gray-600">All properties are RERA compliant with complete legal documentation and transparency.</p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#c83232]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Home className="w-8 h-8 text-[#c83232]" />
+              <div className="w-16 h-16 bg-[#7B2CBF]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Home className="w-8 h-8 text-[#7B2CBF]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Ready to Move</h3>
               <p className="text-gray-600">Immediate possession available with no waiting period for most of our properties.</p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#c83232]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Star className="w-8 h-8 text-[#c83232]" />
+              <div className="w-16 h-16 bg-[#7B2CBF]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Star className="w-8 h-8 text-[#7B2CBF]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Guidance</h3>
               <p className="text-gray-600">Professional consultation and market insights to help you make the right investment decision.</p>
@@ -319,7 +319,7 @@ export function PropertiesPage() {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-12 lg:py-16 bg-[#0a0a0a]">
+      <section className="py-12 lg:py-16 bg-[#121212]">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold mb-4">
@@ -332,7 +332,7 @@ export function PropertiesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg"
-                className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
+                className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
                 onClick={() => window.location.href = "/contact"}
               >
                 Schedule Site Visit

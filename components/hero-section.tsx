@@ -101,7 +101,7 @@ export function HeroSection() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-sm font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 cursor-pointer whitespace-nowrap"
+                      className="text-sm font-medium text-gray-700 hover:text-[#7B2CBF] transition-colors duration-200 cursor-pointer whitespace-nowrap"
                     >
                       {item.name}
                     </a>
@@ -109,7 +109,7 @@ export function HeroSection() {
                     <button
                       key={item.name}
                       onClick={() => scrollToSection(item.href)}
-                      className="text-sm font-medium text-gray-700 hover:text-[#c83232] transition-colors duration-200 cursor-pointer whitespace-nowrap"
+                      className="text-sm font-medium text-gray-700 hover:text-[#7B2CBF] transition-colors duration-200 cursor-pointer whitespace-nowrap"
                     >
                       {item.name}
                     </button>
@@ -120,7 +120,7 @@ export function HeroSection() {
               {/* Desktop Phone Number */}
               <a 
                 href="tel:+919936931555"
-                className="hidden lg:flex items-center gap-2 bg-[#c83232] text-white hover:bg-[#a82828] px-4 py-2.5 rounded-lg cursor-pointer transition-all duration-200 flex-shrink-0 shadow-sm hover:shadow-md"
+                className="hidden lg:flex items-center gap-2 bg-[#7B2CBF] text-[#F7F7F7] hover:bg-[#6A1FA3] px-4 py-2.5 rounded-lg cursor-pointer transition-all duration-200 flex-shrink-0 shadow-sm hover:shadow-md"
               >
                 <Phone className="w-4 h-4" />
                 <span className="text-sm font-semibold">(+91)-99369-31555</span>
@@ -156,7 +156,7 @@ export function HeroSection() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#c83232] hover:bg-red-50 transition-all duration-200 py-3 px-3 rounded-lg cursor-pointer"
+                        className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#7B2CBF] hover:bg-gray-50 transition-all duration-200 py-3 px-3 rounded-lg cursor-pointer"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {item.name}
@@ -165,7 +165,7 @@ export function HeroSection() {
                       <button
                         key={item.name}
                         onClick={() => scrollToSection(item.href)}
-                        className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#c83232] hover:bg-red-50 transition-all duration-200 py-3 px-3 rounded-lg cursor-pointer"
+                        className="block w-full text-left text-base font-medium text-gray-700 hover:text-[#7B2CBF] hover:bg-gray-50 transition-all duration-200 py-3 px-3 rounded-lg cursor-pointer"
                       >
                         {item.name}
                       </button>
@@ -177,7 +177,7 @@ export function HeroSection() {
                 <div className="mt-6 space-y-3">
                   <a 
                     href="tel:+919936931555"
-                    className="flex items-center justify-center gap-2 bg-[#c83232] text-white hover:bg-[#a82828] px-4 py-3 rounded-lg cursor-pointer w-full transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98]"
+                    className="flex items-center justify-center gap-2 bg-[#7B2CBF] text-[#F7F7F7] hover:bg-[#6A1FA3] px-4 py-3 rounded-lg cursor-pointer w-full transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98]"
                   >
                     <Phone className="w-4 h-4" />
                     <span className="text-sm font-semibold">(+91)-99369-31555</span>
@@ -185,7 +185,7 @@ export function HeroSection() {
 
                   <Button 
                     size="default"
-                    className="w-full bg-[#c83232] hover:bg-[#a82828] text-white rounded-lg h-12 text-base font-semibold shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.98] cursor-pointer"
+                    className="w-full bg-[#7B2CBF] hover:bg-[#6A1FA3] text-[#F7F7F7] rounded-lg h-12 text-base font-semibold shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.98] cursor-pointer"
                     onClick={() => {
                       window.location.href = "/properties"
                       setIsMobileMenuOpen(false)
@@ -207,7 +207,7 @@ export function HeroSection() {
       {/* Hero Content */}
       <div className="container mx-auto px-4 sm:px-6 py-2 lg:py-6">
         {/* Black Rounded Container - Optimized for mobile viewport */}
-        <div className="bg-[#0a0a0a] rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[4rem] overflow-hidden shadow-2xl">
+        <div className="bg-[#121212] rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[4rem] overflow-hidden shadow-2xl">
           {/* Mobile Layout - Left-aligned with proper image positioning */}
           <div className="lg:hidden">
             {/* Rating Badge - At the top, left-aligned */}
@@ -215,10 +215,10 @@ export function HeroSection() {
               <div className="flex items-center justify-start gap-2 mb-4">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#c83232] text-[#c83232]" />
+                    <Star key={i} className="w-4 h-4 fill-[#E6C87A] text-[#E6C87A]" />
                   ))}
                 </div>
-                <span className="text-sm text-gray-400 font-medium">500+ happy customers</span>
+                <span className="text-sm text-[#9CA3AF] font-medium">500+ happy customers</span>
               </div>
             </div>
 
@@ -243,11 +243,11 @@ export function HeroSection() {
                 <br />
                 Flats in Lucknow
                 <br />
-                <span className="text-[#c83232]">PropertyWaleBabu</span>
+                <span className="text-[#7B2CBF]">PropertyWaleBabu</span>
               </h1>
 
               {/* Description - Left-aligned */}
-              <p className="text-sm text-gray-400 mb-4 leading-relaxed text-left">
+              <p className="text-sm text-[#9CA3AF] mb-4 leading-relaxed text-left">
                 Explore high-quality apartments from 1 BHK to 4 BHK across prime Lucknow locations — immediate allotment, no waiting.
               </p>
 
@@ -255,7 +255,7 @@ export function HeroSection() {
               <div className="flex justify-start mb-4">
                 <Button 
                   size="default"
-                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-6 h-10 text-sm font-semibold group cursor-pointer"
+                  className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-[#F7F7F7] rounded-full px-6 h-10 text-sm font-semibold group cursor-pointer"
                   onClick={() => window.location.href = "/properties"}
                 >
                   View Properties
@@ -268,17 +268,17 @@ export function HeroSection() {
             <div className="text-white px-5 sm:px-6 pb-6">
               <div className="grid grid-cols-1 gap-4 pt-4 border-t border-white/10">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-[#c83232] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#E6C87A] rounded-full mt-2 flex-shrink-0"></div>
                   <div className="text-left flex-1">
                     <h3 className="text-sm text-white font-semibold mb-1">Prime Locations</h3>
-                    <p className="text-xs text-gray-400 leading-relaxed">Properties in Lucknow's best neighborhoods</p>
+                    <p className="text-xs text-[#9CA3AF] leading-relaxed">Properties in Lucknow's best neighborhoods</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-[#c83232] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#E6C87A] rounded-full mt-2 flex-shrink-0"></div>
                   <div className="text-left flex-1">
                     <h3 className="text-sm text-white font-semibold mb-1">Immediate Possession</h3>
-                    <p className="text-xs text-gray-400 leading-relaxed">Ready-to-move flats with instant allotment</p>
+                    <p className="text-xs text-[#9CA3AF] leading-relaxed">Ready-to-move flats with instant allotment</p>
                   </div>
                 </div>
               </div>
@@ -293,10 +293,10 @@ export function HeroSection() {
               <div className="flex items-center gap-2 mb-4 lg:mb-6">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 lg:w-4 lg:h-4 fill-[#c83232] text-[#c83232]" />
+                    <Star key={i} className="w-3 h-3 lg:w-4 lg:h-4 fill-[#E6C87A] text-[#E6C87A]" />
                   ))}
                 </div>
-                <span className="text-xs lg:text-sm text-gray-400 font-medium">500+ happy customers</span>
+                <span className="text-xs lg:text-sm text-[#9CA3AF] font-medium">500+ happy customers</span>
               </div>
 
               {/* Main Headline - Using Poppins */}
@@ -305,11 +305,11 @@ export function HeroSection() {
                 <br />
                 Flats in Lucknow
                 <br />
-                <span className="text-[#c83232]">PropertyWaleBabu</span>
+                <span className="text-[#7B2CBF]">PropertyWaleBabu</span>
               </h1>
 
               {/* Description */}
-              <p className="text-sm lg:text-base xl:text-lg text-gray-400 mb-6 lg:mb-8 leading-relaxed max-w-xl">
+              <p className="text-sm lg:text-base xl:text-lg text-[#9CA3AF] mb-6 lg:mb-8 leading-relaxed max-w-xl">
                 Explore high-quality apartments from 1 BHK to 4 BHK across prime Lucknow locations — immediate allotment, no waiting.
               </p>
 
@@ -317,7 +317,7 @@ export function HeroSection() {
               <div className="mb-8 lg:mb-10">
                 <Button 
                   size="lg"
-                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-6 lg:px-8 h-[44px] lg:h-[48px] text-sm lg:text-base font-semibold group cursor-pointer"
+                  className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-[#F7F7F7] rounded-full px-6 lg:px-8 h-[44px] lg:h-[48px] text-sm lg:text-base font-semibold group cursor-pointer"
                   onClick={() => window.location.href = "/properties"}
                 >
                   View Properties
@@ -329,11 +329,11 @@ export function HeroSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 pt-4 lg:pt-6 border-t border-white/10">
                 <div>
                   <h3 className="text-xs lg:text-sm text-white font-semibold mb-1">Prime Locations</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed">Properties in Lucknow's best neighborhoods.</p>
+                  <p className="text-xs text-[#9CA3AF] leading-relaxed">Properties in Lucknow's best neighborhoods.</p>
                 </div>
                 <div>
                   <h3 className="text-xs lg:text-sm text-white font-semibold mb-1">Immediate Possession</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed">Ready-to-move flats with instant allotment.</p>
+                  <p className="text-xs text-[#9CA3AF] leading-relaxed">Ready-to-move flats with instant allotment.</p>
                 </div>
               </div>
             </div>
@@ -358,19 +358,19 @@ export function HeroSection() {
           <div className="container mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-2 gap-4">
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">500+</p>
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#7B2CBF] mb-1">500+</p>
                 <p className="text-xs text-gray-600 font-medium">Properties Sold</p>
               </div>
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">5+</p>
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#7B2CBF] mb-1">5+</p>
                 <p className="text-xs text-gray-600 font-medium">Years Experience</p>
               </div>
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">100%</p>
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#7B2CBF] mb-1">100%</p>
                 <p className="text-xs text-gray-600 font-medium">Legal Properties</p>
               </div>
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#c83232] mb-1">24/7</p>
+                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#7B2CBF] mb-1">24/7</p>
                 <p className="text-xs text-gray-600 font-medium">Support Available</p>
               </div>
             </div>
@@ -386,7 +386,7 @@ export function HeroSection() {
             { value: "24/7", label: "Support Available" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="font-[family-name:var(--font-poppins)] text-2xl lg:text-3xl xl:text-4xl font-bold text-[#c83232] mb-1 lg:mb-2">{stat.value}</p>
+              <p className="font-[family-name:var(--font-poppins)] text-2xl lg:text-3xl xl:text-4xl font-bold text-[#7B2CBF] mb-1 lg:mb-2">{stat.value}</p>
               <p className="text-xs lg:text-sm text-gray-600 font-medium">{stat.label}</p>
             </div>
           ))}
@@ -401,7 +401,7 @@ export function HeroSection() {
               {["1 BHK Flats", "2 BHK Apartments", "3 BHK Homes", "4 BHK Luxury", "Ready-to-Move"].map((propertyType) => (
                 <span 
                   key={`${propertyType}-${i}`}
-                  className="text-lg lg:text-xl font-bold text-gray-400 hover:text-[#c83232] transition-colors duration-300 cursor-pointer mx-4 lg:mx-5"
+                  className="text-lg lg:text-xl font-bold text-gray-400 hover:text-[#7B2CBF] transition-colors duration-300 cursor-pointer mx-4 lg:mx-5"
                 >
                   {propertyType} •
                 </span>

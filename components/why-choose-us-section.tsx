@@ -59,7 +59,7 @@ export function WhyChooseUsSection() {
         <div className={`text-center mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
-          <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-4 block">
+          <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-4 block">
             Why Choose Us
           </span>
           <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 leading-tight">
@@ -95,7 +95,7 @@ export function WhyChooseUsSection() {
                 
                 {/* Content */}
                 <div className="p-6 lg:p-8 flex-1 flex flex-col">
-                  <div className="text-4xl lg:text-5xl font-bold text-[#c83232]/20 mb-4 font-[family-name:var(--font-poppins)]">
+                  <div className="text-4xl lg:text-5xl font-bold text-[#7B2CBF]/20 mb-4 font-[family-name:var(--font-poppins)]">
                     {reason.number}
                   </div>
                   <h3 className="font-[family-name:var(--font-poppins)] font-bold text-lg lg:text-xl text-gray-900 mb-3 leading-tight">

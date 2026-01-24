@@ -51,7 +51,7 @@ export function FooterSection() {
     >
       <div className="container mx-auto px-4 sm:px-6">
         {/* Main Footer Content - Black Rounded Container */}
-        <div className={`bg-[#0a0a0a] rounded-2xl sm:rounded-3xl lg:rounded-[4rem] overflow-hidden shadow-2xl transition-all duration-1000 ${
+        <div className={`bg-[#121212] rounded-2xl sm:rounded-3xl lg:rounded-[4rem] overflow-hidden shadow-2xl transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           
@@ -76,12 +76,12 @@ export function FooterSection() {
                     <h3 className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl lg:text-2xl font-bold">
                       PropertyWaleBabu
                     </h3>
-                    <p className="text-gray-400 text-xs sm:text-sm">Your Trusted Real Estate Partner Since 2019</p>
+                    <p className="text-[#9CA3AF] text-xs sm:text-sm">Your Trusted Real Estate Partner Since 2019</p>
                   </div>
                 </div>
 
                 {/* Company Description */}
-                <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 max-w-lg">
+                <p className="text-[#9CA3AF] text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 max-w-lg">
                   We provide premium real estate solutions with transparent pricing, legal documentation, and immediate possession.
                 </p>
 
@@ -89,11 +89,11 @@ export function FooterSection() {
                 <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
                   <div className="flex items-center gap-1">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3 sm:w-4 h-3 sm:h-4 fill-[#c83232] text-[#c83232]" />
+                      <Star key={i} className="w-3 sm:w-4 h-3 sm:h-4 fill-[#E6C87A] text-[#E6C87A]" />
                     ))}
                   </div>
                   <span className="text-white font-semibold text-sm sm:text-base">4.9/5</span>
-                  <span className="text-gray-400 text-xs sm:text-sm">(500+ happy customers)</span>
+                  <span className="text-[#9CA3AF] text-xs sm:text-sm">(500+ happy customers)</span>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ export function FooterSection() {
               <div className={`transition-all duration-1000 delay-400 ${
                 isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
               }`}>
-                <div className="bg-gradient-to-br from-[#c83232] to-[#a02828] rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 text-center">
+                <div className="bg-gradient-to-br from-[#7B2CBF] to-[#6A1FA3] rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 text-center">
                   <h3 className="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-1 sm:mb-2">
                     Contact Us Now!
                   </h3>
@@ -124,7 +124,7 @@ export function FooterSection() {
                   {/* CTA Button */}
                   <Button 
                     size="lg"
-                    className="w-full bg-white text-[#c83232] hover:bg-gray-100 rounded-full h-10 sm:h-12 text-sm sm:text-base font-semibold cursor-pointer"
+                    className="w-full bg-[#E6C87A] text-[#121212] hover:bg-[#D4B866] rounded-full h-10 sm:h-12 text-sm sm:text-base font-semibold cursor-pointer"
                     onClick={() => window.location.href = "/contact"}
                   >
                     <span className="hidden sm:inline">Schedule Property Visit</span>
@@ -149,7 +149,7 @@ export function FooterSection() {
                     <li key={link}>
                       <a 
                         href="#" 
-                        className="text-gray-400 hover:text-white transition-colors duration-200 text-sm cursor-pointer"
+                        className="text-[#9CA3AF] hover:text-white transition-colors duration-200 text-sm cursor-pointer"
                       >
                         {link}
                       </a>
@@ -168,7 +168,7 @@ export function FooterSection() {
                     <li key={property}>
                       <a 
                         href="#" 
-                        className="text-gray-400 hover:text-white transition-colors duration-200 text-sm cursor-pointer"
+                        className="text-[#9CA3AF] hover:text-white transition-colors duration-200 text-sm cursor-pointer"
                       >
                         {property}
                       </a>
@@ -184,26 +184,26 @@ export function FooterSection() {
                 <h4 className="text-white font-semibold text-base sm:text-lg mb-3 sm:mb-4">Visit Us:</h4>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-4 h-4 text-[#c83232] mt-1 flex-shrink-0" />
+                    <MapPin className="w-4 h-4 text-[#E6C87A] mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-white font-medium text-sm">Ground Floor, Rohtas Plumeria</p>
-                      <p className="text-gray-400 text-xs">Flat No, T-001, near New High Court, Vibhuti Khand, Gomti Nagar, Lucknow, UP 226010</p>
+                      <p className="text-[#9CA3AF] text-xs">Flat No, T-001, near New High Court, Vibhuti Khand, Gomti Nagar, Lucknow, UP 226010</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <Phone className="w-4 h-4 text-[#c83232] mt-1 flex-shrink-0" />
+                    <Phone className="w-4 h-4 text-[#E6C87A] mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-white font-medium text-sm">99369-31555</p>
-                      <p className="text-gray-400 text-xs">Property Helpline</p>
+                      <p className="text-[#9CA3AF] text-xs">Property Helpline</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <Mail className="w-4 h-4 text-[#c83232] mt-1 flex-shrink-0" />
+                    <Mail className="w-4 h-4 text-[#E6C87A] mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-white font-medium text-sm break-all sm:break-normal">propertywalebabu@gmail.com</p>
-                      <p className="text-gray-400 text-xs">Property Inquiries</p>
+                      <p className="text-[#9CA3AF] text-xs">Property Inquiries</p>
                     </div>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ export function FooterSection() {
             <div className={`text-center pt-6 sm:pt-8 border-t border-white/10 transition-all duration-1000 delay-600 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              <p className="text-gray-400 text-xs sm:text-sm">
+              <p className="text-[#9CA3AF] text-xs sm:text-sm">
                 © 2026 PropertyWaleBabu. All rights reserved.
               </p>
             </div>

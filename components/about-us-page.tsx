@@ -70,11 +70,11 @@ export function AboutUsPage() {
             <div className={`transition-all duration-1000 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
             }`}>
-              <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-6 block">
+              <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-6 block">
                 About PropertyWaleBabu
               </span>
               <h1 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Helping You Find the <span className="text-[#c83232]">Perfect Home!</span>
+                Helping You Find the <span className="text-[#7B2CBF]">Perfect Home!</span>
               </h1>
               
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-8">
@@ -87,7 +87,7 @@ export function AboutUsPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <Button 
-                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
+                  className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
                   onClick={() => window.location.href = "/contact"}
                 >
                   Contact Us Today
@@ -129,7 +129,7 @@ export function AboutUsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="font-[family-name:var(--font-poppins)] text-5xl lg:text-6xl font-bold text-[#c83232] mb-2">
+                <p className="font-[family-name:var(--font-poppins)] text-5xl lg:text-6xl font-bold text-[#7B2CBF] mb-2">
                   {stat.value}
                 </p>
                 <p className="text-lg text-gray-600 font-medium">{stat.label}</p>
@@ -144,7 +144,7 @@ export function AboutUsPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-              Our <span className="text-[#c83232]">Credentials</span> & Recognition
+              Our <span className="text-[#7B2CBF]">Credentials</span> & Recognition
             </h2>
           </div>
           
@@ -221,7 +221,7 @@ export function AboutUsPage() {
             {whyChooseUs.map((item, index) => (
               <div key={index} className="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#c83232]/10 rounded-xl flex items-center justify-center text-[#c83232]">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#7B2CBF]/10 rounded-xl flex items-center justify-center text-[#7B2CBF]">
                     {item.icon}
                   </div>
                   <div>
@@ -240,27 +240,27 @@ export function AboutUsPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our <span className="text-[#c83232]">Services</span>
+              Our <span className="text-[#7B2CBF]">Services</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-              PropertyWaleBabu offers a <span className="text-[#c83232] font-semibold">comprehensive range</span> of real estate services to meet all your property needs:
+              PropertyWaleBabu offers a <span className="text-[#7B2CBF] font-semibold">comprehensive range</span> of real estate services to meet all your property needs:
             </p>
           </div>
           
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
-                <div key={index} className="flex items-center gap-4 p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#c83232]/30 hover:shadow-lg transition-all duration-300 group">
-                  <div className="w-12 h-12 bg-[#c83232]/10 rounded-xl flex items-center justify-center text-[#c83232] group-hover:bg-[#c83232] group-hover:text-white transition-all duration-300 flex-shrink-0">
+                <div key={index} className="flex items-center gap-4 p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#7B2CBF]/30 hover:shadow-lg transition-all duration-300 group">
+                  <div className="w-12 h-12 bg-[#7B2CBF]/10 rounded-xl flex items-center justify-center text-[#7B2CBF] group-hover:bg-[#7B2CBF] group-hover:text-white transition-all duration-300 flex-shrink-0">
                     {service.icon}
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#c83232] transition-colors duration-300">{service.name}</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#7B2CBF] transition-colors duration-300">{service.name}</h3>
                 </div>
               ))}
             </div>
             
             <div className="text-center mt-12">
-              <p className="text-lg text-gray-600 font-medium">and <span className="text-[#c83232] font-semibold">much more</span>.</p>
+              <p className="text-lg text-gray-600 font-medium">and <span className="text-[#7B2CBF] font-semibold">much more</span>.</p>
             </div>
           </div>
         </div>
@@ -271,7 +271,7 @@ export function AboutUsPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-              <span className="text-[#c83232]">Experience</span> & Market Insights
+              <span className="text-[#7B2CBF]">Experience</span> & Market Insights
             </h2>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-12">
               With years of experience in Lucknow's real estate market, we bring you market trends and smart tips to help you make informed decisions. Our deep understanding of local property dynamics ensures you get the best value for your investment.
@@ -279,17 +279,17 @@ export function AboutUsPage() {
             
             <div className="bg-gray-50 p-8 lg:p-12 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Let Us Help You Find Your <span className="text-[#c83232]">Perfect Home</span>
+                Let Us Help You Find Your <span className="text-[#7B2CBF]">Perfect Home</span>
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 At PropertyWaleBabu, we understand that buying or selling a property is one of life's biggest decisions. With our commitment to transparency, expert market knowledge, and personalized service, we make your real estate journey smooth and successful.
               </p>
               
               <h4 className="text-xl font-bold text-gray-900 mb-4">
-                Join Our <span className="text-[#c83232]">Satisfied Clients</span>
+                Join Our <span className="text-[#7B2CBF]">Satisfied Clients</span>
               </h4>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Join hundreds of satisfied clients who have found their dream homes with PropertyWaleBabu. With our expertise in Lucknow's real estate market and commitment to your success, we are your <span className="text-[#c83232] font-semibold">trusted partner</span> in all property matters.
+                Join hundreds of satisfied clients who have found their dream homes with PropertyWaleBabu. With our expertise in Lucknow's real estate market and commitment to your success, we are your <span className="text-[#7B2CBF] font-semibold">trusted partner</span> in all property matters.
               </p>
             </div>
           </div>
@@ -297,7 +297,7 @@ export function AboutUsPage() {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-16 lg:py-24 bg-[#0a0a0a]">
+      <section className="py-16 lg:py-24 bg-[#121212]">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold mb-6">
@@ -310,7 +310,7 @@ export function AboutUsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg"
-                className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
+                className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
                 onClick={() => window.location.href = "/contact"}
               >
                 Schedule Consultation

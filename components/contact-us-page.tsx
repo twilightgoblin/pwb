@@ -79,13 +79,13 @@ export function ContactUsPage() {
             <div className={`transition-all duration-1000 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
             }`}>
-              <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-6 block">
+              <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-6 block">
                 Contact Us
               </span>
               <h1 className="font-[family-name:var(--font-poppins)] text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Get Your Dream
                 <br />
-                <span className="text-[#c83232]">Property Today</span>
+                <span className="text-[#7B2CBF]">Property Today</span>
               </h1>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -94,7 +94,7 @@ export function ContactUsPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <Button 
-                  className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
+                  className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-full px-10 h-14 text-base font-semibold group cursor-pointer"
                   onClick={handlePhoneCall}
                 >
                   <Phone className="w-5 h-5 mr-2" />
@@ -104,7 +104,7 @@ export function ContactUsPage() {
                 
                 <Button 
                   variant="outline"
-                  className="border-2 border-[#c83232] text-[#c83232] hover:bg-[#c83232] hover:text-white rounded-full px-8 h-14 text-base font-semibold group cursor-pointer"
+                  className="border-2 border-[#7B2CBF] text-[#7B2CBF] hover:bg-[#7B2CBF] hover:text-white rounded-full px-8 h-14 text-base font-semibold group cursor-pointer"
                   onClick={handleEmailClick}
                 >
                   <Mail className="w-5 h-5 mr-2" />
@@ -136,7 +136,7 @@ export function ContactUsPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Multiple Ways to <span className="text-[#c83232]">Reach Us</span>
+              Multiple Ways to <span className="text-[#7B2CBF]">Reach Us</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Choose the most convenient way to get in touch with our real estate experts
@@ -150,11 +150,11 @@ export function ContactUsPage() {
                 className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group border border-gray-100"
                 onClick={info.action}
               >
-                <div className="w-12 h-12 bg-[#c83232]/10 rounded-xl flex items-center justify-center text-[#c83232] group-hover:bg-[#c83232] group-hover:text-white transition-all duration-300 mb-4">
+                <div className="w-12 h-12 bg-[#E6C87A]/10 rounded-xl flex items-center justify-center text-[#E6C87A] group-hover:bg-[#E6C87A] group-hover:text-[#121212] transition-all duration-300 mb-4">
                   {info.icon}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{info.title}</h3>
-                <p className="text-[#c83232] font-semibold mb-2">{info.details}</p>
+                <p className="text-[#7B2CBF] font-semibold mb-2">{info.details}</p>
                 <p className="text-sm text-gray-600">{info.description}</p>
               </div>
             ))}
@@ -185,11 +185,11 @@ export function ContactUsPage() {
               <div className={`mt-12 lg:mt-0 transition-all duration-1000 delay-300 ${
                 isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
               }`}>
-                <span className="text-[#c83232] text-sm font-semibold tracking-wide uppercase mb-6 block">
+                <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-6 block">
                   Meet Our Team
                 </span>
                 <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                  Your Trusted <span className="text-[#c83232]">Real Estate Partners</span>
+                  Your Trusted <span className="text-[#7B2CBF]">Real Estate Partners</span>
                 </h2>
                 
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -198,22 +198,22 @@ export function ContactUsPage() {
 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#c83232] flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#E6C87A] flex-shrink-0" />
                     <span className="text-gray-700">Expert knowledge of Lucknow real estate market</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#c83232] flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#E6C87A] flex-shrink-0" />
                     <span className="text-gray-700">Personalized property recommendations</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#c83232] flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#E6C87A] flex-shrink-0" />
                     <span className="text-gray-700">End-to-end support from search to possession</span>
                   </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
-                    className="bg-[#c83232] hover:bg-[#a82828] text-white rounded-full px-8 h-12 text-base font-semibold group cursor-pointer"
+                    className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-white rounded-full px-8 h-12 text-base font-semibold group cursor-pointer"
                     onClick={handlePhoneCall}
                   >
                     <Phone className="w-4 h-4 mr-2" />
@@ -233,7 +233,7 @@ export function ContactUsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose <span className="text-[#c83232]">PropertyWaleBabu?</span>
+                Why Choose <span className="text-[#7B2CBF]">PropertyWaleBabu?</span>
               </h2>
               <p className="text-lg text-gray-600">
                 When you contact us, you're choosing Lucknow's trusted real estate experts
@@ -244,7 +244,7 @@ export function ContactUsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {whyContactUs.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#c83232] mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#E6C87A] mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700 leading-relaxed">{benefit}</span>
                   </div>
                 ))}
