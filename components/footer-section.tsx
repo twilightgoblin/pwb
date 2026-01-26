@@ -66,7 +66,7 @@ export function FooterSection() {
                 {/* Logo & Company Name */}
                 <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
                   <Image 
-                    src="/images/logo_cropp.png" 
+                    src="/images/logo.jpg" 
                     alt="PropertyWaleBabu - Real Estate Services" 
                     width={50} 
                     height={50} 
@@ -194,7 +194,7 @@ export function FooterSection() {
                   <div className="flex items-start gap-3">
                     <Phone className="w-4 h-4 text-[#E6C87A] mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium text-sm">99369-31555</p>
+                      <p className="text-white font-medium text-sm">(+91)-99369-31555</p>
                       <p className="text-[#9CA3AF] text-xs">Property Helpline</p>
                     </div>
                   </div>

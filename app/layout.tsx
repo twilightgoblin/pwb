@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "Explore high-quality apartments from 1 BHK to 4 BHK across prime Lucknow locations. Ready-to-move flats with immediate allotment, no waiting. Buy luxury properties in UP.",
   icons: {
     icon: [
-      { url: "/images/logo_cropp.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/logo_cropp.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/logo.jpg", sizes: "32x32", type: "image/jpeg" },
+      { url: "/images/logo.jpg", sizes: "16x16", type: "image/jpeg" },
     ],
     apple: [
-      { url: "/images/logo_cropp.png", sizes: "180x180", type: "image/png" },
+      { url: "/images/logo.jpg", sizes: "180x180", type: "image/jpeg" },
     ],
-    shortcut: "/images/logo_cropp.png",
+    shortcut: "/images/logo.jpg",
   },
 }
 

@@ -55,14 +55,14 @@ export function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity duration-200" style={{ cursor: 'pointer' }}>
               <Image 
-                src="/images/logo_cropp.png" 
+                src="/images/logo.jpg" 
                 alt="PropertyWaleBabu - Real Estate Services" 
                 width={40} 
                 height={40} 
                 className="h-8 sm:h-10 w-auto cursor-pointer"
                 priority
               />
-              <span className="font-bold text-lg text-gray-800 hidden sm:block">PropertyWaleBabu</span>
+              <span className="font-bold text-lg text-gray-800 hidden sm:block hover:text-[#7B2CBF] transition-colors duration-200">PropertyWaleBabu</span>
             </Link>
             
             {/* Desktop Navigation */}

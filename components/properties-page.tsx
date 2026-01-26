@@ -293,7 +293,7 @@ export function PropertiesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#7B2CBF]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-5 h-5 text-[#E6C87A]" />
+                <CheckCircle className="w-5 h-5 text-[#7B2CBF]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">RERA Registered</h3>
               <p className="text-gray-600">All properties are RERA compliant with complete legal documentation and transparency.</p>
