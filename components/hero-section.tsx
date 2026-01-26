@@ -205,26 +205,26 @@ export function HeroSection() {
       <div className="pt-16 sm:pt-20"></div>
 
       {/* Hero Content */}
-      <div className="container mx-auto px-4 sm:px-6 py-2 lg:py-4 xl:py-6">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-2 lg:py-4 xl:py-6">
         {/* Black Rounded Container - Optimized for all screen sizes */}
-        <div className="bg-[#121212] rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[2.5rem] xl:rounded-[4rem] overflow-hidden shadow-2xl max-h-[85vh] lg:max-h-[80vh] xl:max-h-none">
-          {/* Mobile Layout - Left-aligned with proper image positioning */}
+        <div className="bg-[#121212] rounded-[1.2rem] sm:rounded-[1.5rem] lg:rounded-[2.5rem] xl:rounded-[4rem] overflow-hidden shadow-2xl">
+          {/* Mobile Layout - Improved spacing and typography */}
           <div className="lg:hidden">
-            {/* Rating Badge - At the top, left-aligned */}
-            <div className="text-white px-5 sm:px-6 pt-6 sm:pt-8 pb-4">
-              <div className="flex items-center justify-start gap-2 mb-4">
-                <div className="flex items-center gap-1">
+            {/* Rating Badge - Compact mobile version */}
+            <div className="text-white px-4 sm:px-5 pt-5 sm:pt-6 pb-3">
+              <div className="flex items-center justify-start gap-2">
+                <div className="flex items-center gap-0.5">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#E6C87A] text-[#E6C87A]" />
+                    <Star key={i} className="w-3.5 h-3.5 fill-[#E6C87A] text-[#E6C87A]" />
                   ))}
                 </div>
-                <span className="text-sm text-[#9CA3AF] font-medium">500+ happy customers</span>
+                <span className="text-xs sm:text-sm text-[#9CA3AF] font-medium">500+ happy customers</span>
               </div>
             </div>
 
-            {/* Image Section - Below ratings, positioned to show property */}
-            <div className="relative px-5 sm:px-6 pb-5 sm:pb-6">
-              <div className="relative w-full h-[200px] sm:h-[240px] rounded-[1rem] sm:rounded-[1.5rem] overflow-hidden shadow-lg">
+            {/* Image Section - Better mobile proportions */}
+            <div className="relative px-4 sm:px-5 pb-4 sm:pb-5">
+              <div className="relative w-full h-[180px] sm:h-[220px] rounded-[0.8rem] sm:rounded-[1rem] overflow-hidden shadow-lg">
                 <Image
                   src="/images/hero.gif"
                   alt="Luxury properties and apartments in Lucknow - PropertyWaleBabu"
@@ -235,10 +235,10 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Content Section - Below image, left-aligned */}
-            <div className="text-white px-5 sm:px-6 pb-4">
-              {/* Main Headline - Left-aligned */}
-              <h1 className="font-[family-name:var(--font-poppins)] text-xl sm:text-2xl font-bold leading-tight tracking-tight mb-3 text-left">
+            {/* Content Section - Improved mobile typography */}
+            <div className="text-white px-4 sm:px-5 pb-3">
+              {/* Main Headline - Better mobile sizing */}
+              <h1 className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold leading-tight tracking-tight mb-2.5 text-left">
                 Ready-to-Move
                 <br />
                 Flats in Lucknow
@@ -246,38 +246,38 @@ export function HeroSection() {
                 <span className="text-[#7B2CBF]">PropertyWaleBabu</span>
               </h1>
 
-              {/* Description - Left-aligned */}
-              <p className="text-sm text-[#9CA3AF] mb-4 leading-relaxed text-left">
+              {/* Description - More readable on mobile */}
+              <p className="text-xs sm:text-sm text-[#9CA3AF] mb-4 leading-relaxed text-left max-w-[280px] sm:max-w-none">
                 Explore high-quality apartments from 1 BHK to 4 BHK across prime Lucknow locations — immediate allotment, no waiting.
               </p>
 
-              {/* CTA Button - Left-aligned */}
+              {/* CTA Button - Better mobile sizing */}
               <div className="flex justify-start mb-4">
                 <Button 
                   size="default"
-                  className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-[#F7F7F7] rounded-full px-6 h-10 text-sm font-semibold group cursor-pointer"
+                  className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-[#F7F7F7] rounded-full px-5 sm:px-6 h-9 sm:h-10 text-xs sm:text-sm font-semibold group cursor-pointer shadow-lg"
                   onClick={() => window.location.href = "/properties"}
                 >
                   View Properties
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
             </div>
 
-            {/* Features Section - Standardized mobile version */}
-            <div className="text-white px-5 sm:px-6 pb-6">
-              <div className="grid grid-cols-1 gap-4 pt-4 border-t border-white/10">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-[#E6C87A] rounded-full mt-2 flex-shrink-0"></div>
+            {/* Features Section - Compact mobile version */}
+            <div className="text-white px-4 sm:px-5 pb-5 sm:pb-6">
+              <div className="grid grid-cols-1 gap-3 pt-3 border-t border-white/10">
+                <div className="flex items-start gap-2.5">
+                  <div className="w-1.5 h-1.5 bg-[#E6C87A] rounded-full mt-1.5 flex-shrink-0"></div>
                   <div className="text-left flex-1">
-                    <h3 className="text-sm text-white font-semibold mb-1">Prime Locations</h3>
+                    <h3 className="text-xs sm:text-sm text-white font-semibold mb-0.5">Prime Locations</h3>
                     <p className="text-xs text-[#9CA3AF] leading-relaxed">Properties in Lucknow's best neighborhoods</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-[#E6C87A] rounded-full mt-2 flex-shrink-0"></div>
+                <div className="flex items-start gap-2.5">
+                  <div className="w-1.5 h-1.5 bg-[#E6C87A] rounded-full mt-1.5 flex-shrink-0"></div>
                   <div className="text-left flex-1">
-                    <h3 className="text-sm text-white font-semibold mb-1">Immediate Possession</h3>
+                    <h3 className="text-xs sm:text-sm text-white font-semibold mb-0.5">Immediate Possession</h3>
                     <p className="text-xs text-[#9CA3AF] leading-relaxed">Ready-to-move flats with instant allotment</p>
                   </div>
                 </div>
@@ -353,25 +353,25 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Mobile Stats Section - Outside black container */}
-        <div className="lg:hidden mt-4 mb-4">
-          <div className="container mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-2 gap-4">
+        {/* Mobile Stats Section - Compact and better spaced */}
+        <div className="lg:hidden mt-3 mb-3">
+          <div className="container mx-auto px-3 sm:px-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#7B2CBF] mb-1">500+</p>
-                <p className="text-xs text-gray-600 font-medium">Properties Sold</p>
+                <p className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold text-[#7B2CBF] mb-0.5">500+</p>
+                <p className="text-xs text-gray-600 font-medium leading-tight">Properties Sold</p>
               </div>
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#7B2CBF] mb-1">5+</p>
-                <p className="text-xs text-gray-600 font-medium">Years Experience</p>
+                <p className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold text-[#7B2CBF] mb-0.5">5+</p>
+                <p className="text-xs text-gray-600 font-medium leading-tight">Years Experience</p>
               </div>
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#7B2CBF] mb-1">100%</p>
-                <p className="text-xs text-gray-600 font-medium">Legal Properties</p>
+                <p className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold text-[#7B2CBF] mb-0.5">100%</p>
+                <p className="text-xs text-gray-600 font-medium leading-tight">Legal Properties</p>
               </div>
               <div className="text-left">
-                <p className="font-[family-name:var(--font-poppins)] text-xl font-bold text-[#7B2CBF] mb-1">24/7</p>
-                <p className="text-xs text-gray-600 font-medium">Support Available</p>
+                <p className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold text-[#7B2CBF] mb-0.5">24/7</p>
+                <p className="text-xs text-gray-600 font-medium leading-tight">Support Available</p>
               </div>
             </div>
           </div>
@@ -393,15 +393,15 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Property Types Marquee */}
-      <div className="border-t border-gray-200 py-3 lg:py-4 overflow-hidden bg-gray-50 mt-2">
+      {/* Property Types Marquee - Better mobile spacing */}
+      <div className="border-t border-gray-200 py-2.5 sm:py-3 lg:py-4 overflow-hidden bg-gray-50 mt-1 sm:mt-2">
         <div className="flex animate-marquee whitespace-nowrap">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="flex items-center">
               {["1 BHK Flats", "2 BHK Apartments", "3 BHK Homes", "4 BHK Luxury", "Ready-to-Move"].map((propertyType) => (
                 <span 
                   key={`${propertyType}-${i}`}
-                  className="text-lg lg:text-xl font-bold text-gray-400 hover:text-[#7B2CBF] transition-colors duration-300 cursor-pointer mx-4 lg:mx-5"
+                  className="text-base sm:text-lg lg:text-xl font-bold text-gray-400 hover:text-[#7B2CBF] transition-colors duration-300 cursor-pointer mx-3 sm:mx-4 lg:mx-5"
                 >
                   {propertyType} •
                 </span>
