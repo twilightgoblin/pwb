@@ -222,9 +222,9 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Image Section - Better mobile proportions */}
+            {/* Image Section - Extended height for mobile to reach top-rated section */}
             <div className="relative px-4 sm:px-5 pb-4 sm:pb-5">
-              <div className="relative w-full h-[180px] sm:h-[220px] rounded-[0.8rem] sm:rounded-[1rem] overflow-hidden shadow-lg">
+              <div className="relative w-full h-[280px] sm:h-[320px] rounded-[0.8rem] sm:rounded-[1rem] overflow-hidden shadow-lg">
                 <Image
                   src="/images/hero.gif"
                   alt="Luxury properties and apartments in Lucknow - PropertyWaleBabu"
