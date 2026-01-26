@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Phone, ArrowRight, Star, Menu, X, MapPin, Home, Building } from "lucide-react"
+import { Phone, ArrowRight, Star, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 
@@ -205,9 +205,9 @@ export function HeroSection() {
       <div className="pt-16 sm:pt-20"></div>
 
       {/* Hero Content */}
-      <div className="container mx-auto px-4 sm:px-6 py-2 lg:py-6">
-        {/* Black Rounded Container - Optimized for mobile viewport */}
-        <div className="bg-[#121212] rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[4rem] overflow-hidden shadow-2xl">
+      <div className="container mx-auto px-4 sm:px-6 py-2 lg:py-4 xl:py-6">
+        {/* Black Rounded Container - Optimized for all screen sizes */}
+        <div className="bg-[#121212] rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[2.5rem] xl:rounded-[4rem] overflow-hidden shadow-2xl max-h-[85vh] lg:max-h-[80vh] xl:max-h-none">
           {/* Mobile Layout - Left-aligned with proper image positioning */}
           <div className="lg:hidden">
             {/* Rating Badge - At the top, left-aligned */}
@@ -286,9 +286,9 @@ export function HeroSection() {
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden lg:grid lg:grid-cols-2 gap-0 min-h-[75vh]">
+          <div className="hidden lg:grid lg:grid-cols-2 gap-0 min-h-[60vh] xl:min-h-[70vh] 2xl:min-h-[75vh]">
             {/* Left Content */}
-            <div className="text-white px-6 py-6 lg:px-8 lg:py-8 xl:px-12 xl:py-12 flex flex-col justify-center">
+            <div className="text-white px-6 py-6 lg:px-8 lg:py-6 xl:px-12 xl:py-8 2xl:py-12 flex flex-col justify-center">
               {/* Rating Badge */}
               <div className="flex items-center gap-2 mb-4 lg:mb-6">
                 <div className="flex items-center gap-1">
@@ -300,7 +300,7 @@ export function HeroSection() {
               </div>
 
               {/* Main Headline - Using Poppins */}
-              <h1 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-[1.1] tracking-tight mb-4 lg:mb-5">
+              <h1 className="font-[family-name:var(--font-poppins)] text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-[1.1] tracking-tight mb-3 lg:mb-4 xl:mb-5">
                 Ready-to-Move
                 <br />
                 Flats in Lucknow
@@ -309,12 +309,12 @@ export function HeroSection() {
               </h1>
 
               {/* Description */}
-              <p className="text-sm lg:text-base xl:text-lg text-[#9CA3AF] mb-6 lg:mb-8 leading-relaxed max-w-xl">
+              <p className="text-sm lg:text-base xl:text-lg text-[#9CA3AF] mb-4 lg:mb-6 xl:mb-8 leading-relaxed max-w-xl">
                 Explore high-quality apartments from 1 BHK to 4 BHK across prime Lucknow locations — immediate allotment, no waiting.
               </p>
 
               {/* CTA Button */}
-              <div className="mb-8 lg:mb-10">
+              <div className="mb-6 lg:mb-8 xl:mb-10">
                 <Button 
                   size="lg"
                   className="bg-[#7B2CBF] hover:bg-[#6A1FA3] text-[#F7F7F7] rounded-full px-6 lg:px-8 h-[44px] lg:h-[48px] text-sm lg:text-base font-semibold group cursor-pointer"
@@ -338,9 +338,9 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Right Image - With Padding and Rounded Corners */}
-            <div className="relative p-3 lg:p-4 xl:p-5 flex items-center">
-              <div className="relative w-full h-full rounded-[1.5rem] lg:rounded-[2rem] xl:rounded-[2.2rem] overflow-hidden">
+            {/* Right Image - With Responsive Padding */}
+            <div className="relative p-2 lg:p-3 xl:p-4 2xl:p-5 flex items-center">
+              <div className="relative w-full h-full rounded-[1rem] lg:rounded-[1.5rem] xl:rounded-[2rem] 2xl:rounded-[2.2rem] overflow-hidden">
                 <Image
                   src="/images/hero.gif"
                   alt="Luxury properties and apartments in Lucknow - PropertyWaleBabu"
