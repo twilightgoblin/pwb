@@ -91,7 +91,7 @@ export function HeroSection() {
                   className="h-8 sm:h-10 w-auto cursor-pointer"
                   priority
                 />
-                <span className="font-bold text-lg text-gray-800 hidden sm:block hover:text-[#7B2CBF] transition-colors duration-200">PropertyWaleBabu</span>
+                <span className="font-bold text-base sm:text-lg text-gray-800 hover:text-[#7B2CBF] transition-colors duration-200">PropertyWaleBabu</span>
               </button>
               
               {/* Desktop Navigation */}
