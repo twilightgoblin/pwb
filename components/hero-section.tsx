@@ -278,7 +278,7 @@ export function HeroSection() {
                   <div className="w-1.5 h-1.5 bg-[#E6C87A] rounded-full mt-1.5 flex-shrink-0"></div>
                   <div className="text-left flex-1">
                     <h3 className="text-xs sm:text-sm text-white font-semibold mb-0.5">Immediate Possession</h3>
-                    <p className="text-xs text-[#9CA3AF] leading-relaxed">Ready-to-move flats with instant allotment</p>
+                    <p className="text-xs text-[#9CA3AF] leading-relaxed">Ready-to-move flats with<br />instant allotment</p>
                   </div>
                 </div>
               </div>
@@ -333,7 +333,7 @@ export function HeroSection() {
                 </div>
                 <div>
                   <h3 className="text-xs lg:text-sm text-white font-semibold mb-1">Immediate Possession</h3>
-                  <p className="text-xs text-[#9CA3AF] leading-relaxed">Ready-to-move flats with instant allotment.</p>
+                  <p className="text-xs text-[#9CA3AF] leading-relaxed">Ready-to-move flats with<br />instant allotment.</p>
                 </div>
               </div>
             </div>
