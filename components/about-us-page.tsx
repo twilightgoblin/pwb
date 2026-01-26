@@ -66,9 +66,47 @@ export function AboutUsPage() {
       <section className="relative py-16 lg:py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="lg:grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Content */}
+            {/* Left Image */}
             <div className={`transition-all duration-1000 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+            }`}>
+              <div className="relative w-full h-[400px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
+                <Image
+                  src="/images/about-us-main.jpeg"
+                  alt="Mukhtar Hashmi - Founder of PropertyWaleBabu, Your trusted property consultant in Lucknow"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Enhanced Founder Name Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-8 rounded-b-[3rem]">
+                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl">
+                    <div className="flex items-center gap-4 mb-3">
+                      <div className="w-3 h-3 bg-[#E6C87A] rounded-full animate-pulse"></div>
+                      <span className="text-[#E6C87A] text-sm font-semibold tracking-wider uppercase">
+                        Founder & CEO
+                      </span>
+                    </div>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2 font-[family-name:var(--font-poppins)]">
+                      Mukhtar Hashmi
+                    </h3>
+                    <p className="text-sm lg:text-base text-[#E6C87A] font-semibold mb-2">
+                      RERA Registered Property Consultant
+                    </p>
+                    <div className="flex items-center gap-2">
+                      <Shield className="w-4 h-4 text-white/80" />
+                      <p className="text-xs lg:text-sm text-white/90">
+                        RERA No. – UPRERAAGT21932
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content */}
+            <div className={`mt-12 lg:mt-0 transition-all duration-1000 delay-300 ${
+              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
             }`}>
               <span className="text-[#E6C87A] text-sm font-semibold tracking-wide uppercase mb-6 block">
                 About PropertyWaleBabu
@@ -93,21 +131,6 @@ export function AboutUsPage() {
                   Contact Us Today
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </div>
-            </div>
-
-            {/* Right Image */}
-            <div className={`mt-12 lg:mt-0 transition-all duration-1000 delay-300 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
-            }`}>
-              <div className="relative w-full h-[400px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
-                <Image
-                  src="/images/about-us-main.jpeg"
-                  alt="PropertyWaleBabu - Your trusted property consultant in Lucknow"
-                  fill
-                  className="object-contain"
-                  priority
-                />
               </div>
             </div>
           </div>
