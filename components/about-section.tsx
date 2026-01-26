@@ -50,12 +50,13 @@ export function AboutSection() {
           <div className={`mb-8 transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <div className="relative w-full h-[400px] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-gray-50 to-gray-100">
+            <div className="relative w-full h-[300px] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-gray-50 to-gray-100">
               <Image
                 src="/images/owner.jpeg"
                 alt="PropertyWaleBabu - Professional real estate services in Lucknow"
                 fill
-                className="object-cover"
+                className="object-cover object-center-top"
+                style={{ objectPosition: 'center 20%' }}
               />
             </div>
           </div>
@@ -110,12 +111,13 @@ export function AboutSection() {
           <div className={`transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            <div className="relative w-full h-[600px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
+            <div className="relative w-full h-[450px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
               <Image
                 src="/images/owner.jpeg"
                 alt="PropertyWaleBabu - Professional real estate services in Lucknow"
                 fill
-                className="object-cover"
+                className="object-cover object-center-top"
+                style={{ objectPosition: 'center 20%' }}
               />
             </div>
           </div>
