@@ -27,7 +27,7 @@ export function AboutSection() {
   return (
     <section 
       id="about-section"
-      className="relative py-16 lg:py-24 bg-white overflow-hidden"
+      className="relative py-20 lg:py-32 bg-white overflow-hidden min-h-screen"
     >
       <div className="container mx-auto px-6 relative">
         {/* Mobile Layout */}
@@ -50,7 +50,7 @@ export function AboutSection() {
           <div className={`mb-8 transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <div className="relative w-full h-[300px] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-gray-50 to-gray-100">
+            <div className="relative w-full h-[340px] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-gray-50 to-gray-100">
               <Image
                 src="/images/owner.jpeg"
                 alt="PropertyWaleBabu - Professional real estate services in Lucknow"
@@ -111,7 +111,7 @@ export function AboutSection() {
           <div className={`transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            <div className="relative w-full h-[450px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
+            <div className="relative w-full h-[500px] rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100">
               <Image
                 src="/images/owner.jpeg"
                 alt="PropertyWaleBabu - Professional real estate services in Lucknow"
