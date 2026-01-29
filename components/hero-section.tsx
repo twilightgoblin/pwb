@@ -202,7 +202,7 @@ export function HeroSection() {
       </nav>
 
       {/* Add padding top to account for fixed navbar */}
-      <div className="pt-16 sm:pt-20"></div>
+      <div className="pt-12 sm:pt-16"></div>
 
       {/* Hero Content */}
       <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-2 lg:py-4 xl:py-6">
@@ -224,7 +224,7 @@ export function HeroSection() {
 
             {/* Image Section - Extended height for mobile to reach top-rated section */}
             <div className="relative px-4 sm:px-5 pb-4 sm:pb-5">
-              <div className="relative w-full h-[280px] sm:h-[320px] rounded-[0.8rem] sm:rounded-[1rem] overflow-hidden shadow-lg">
+              <div className="relative w-full h-[300px] sm:h-[360px] rounded-[0.8rem] sm:rounded-[1rem] overflow-hidden shadow-lg">
                 <Image
                   src="/images/5.png"
                   alt="Luxury properties and apartments in Lucknow - PropertyWaleBabu"
@@ -236,7 +236,7 @@ export function HeroSection() {
             </div>
 
             {/* Content Section - Improved mobile typography */}
-            <div className="text-white px-4 sm:px-5 pb-3">
+            <div className="text-white px-4 sm:px-5 pb-4 sm:pb-5">
               {/* Main Headline - Better mobile sizing */}
               <h1 className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold leading-tight tracking-tight mb-2.5 text-left">
                 Ready-to-Move
@@ -265,7 +265,7 @@ export function HeroSection() {
             </div>
 
             {/* Features Section - Compact mobile version */}
-            <div className="text-white px-4 sm:px-5 pb-5 sm:pb-6">
+            <div className="text-white px-4 sm:px-5 pb-6 sm:pb-8">
               <div className="grid grid-cols-1 gap-3 pt-3 border-t border-white/10">
                 <div className="flex items-start gap-2.5">
                   <div className="w-1.5 h-1.5 bg-[#E6C87A] rounded-full mt-1.5 flex-shrink-0"></div>
@@ -286,9 +286,9 @@ export function HeroSection() {
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden lg:grid lg:grid-cols-2 gap-0 min-h-[60vh] xl:min-h-[70vh] 2xl:min-h-[75vh]">
+          <div className="hidden lg:grid lg:grid-cols-2 gap-0 min-h-[65vh] xl:min-h-[75vh] 2xl:min-h-[80vh]">
             {/* Left Content */}
-            <div className="text-white px-6 py-6 lg:px-8 lg:py-6 xl:px-12 xl:py-8 2xl:py-12 flex flex-col justify-center">
+            <div className="text-white px-6 py-8 lg:px-10 lg:py-10 xl:px-14 xl:py-12 2xl:py-16 flex flex-col justify-center">
               {/* Rating Badge */}
               <div className="flex items-center gap-2 mb-4 lg:mb-6">
                 <div className="flex items-center gap-1">
@@ -378,7 +378,7 @@ export function HeroSection() {
         </div>
 
         {/* Bottom Stats - Hidden on Mobile */}
-        <div className="hidden md:grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mt-6 lg:mt-8 mb-4 max-w-5xl mx-auto">
+        <div className="hidden md:grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mt-3 lg:mt-4 mb-4 max-w-5xl mx-auto">
           {[
             { value: "500+", label: "Properties Sold" },
             { value: "5+", label: "Years Experience" },
