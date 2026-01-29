@@ -78,28 +78,17 @@ export function AboutUsPage() {
                   className="object-contain"
                   priority
                 />
-                {/* Enhanced Founder Name Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-8 rounded-b-[3rem]">
-                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl">
-                    <div className="flex items-center gap-4 mb-3">
-                      <div className="w-3 h-3 bg-[#E6C87A] rounded-full animate-pulse"></div>
-                      <span className="text-[#E6C87A] text-sm font-semibold tracking-wider uppercase">
-                        Founder & CEO
-                      </span>
-                    </div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2 font-[family-name:var(--font-poppins)]">
-                      Mukhtar Hashmi
-                    </h3>
-                    <p className="text-sm lg:text-base text-[#E6C87A] font-semibold mb-2">
-                      RERA Registered Property Consultant
-                    </p>
-                    <div className="flex items-center gap-2">
-                      <Shield className="w-4 h-4 text-white/80" />
-                      <p className="text-xs lg:text-sm text-white/90">
-                        RERA No. – UPRERAAGT21932
-                      </p>
-                    </div>
-                  </div>
+                {/* Gradient Overlay with Founder Info */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white z-10">
+                  <h3 className="font-[family-name:var(--font-poppins)] text-2xl lg:text-3xl font-bold mb-2 text-white">
+                    Mukhtar Hashmi
+                  </h3>
+                  <p className="text-[#E6C87A] font-semibold text-lg lg:text-xl mb-4">
+                    Founder and CEO
+                  </p>
+                  {/* Full Width Single Color Gradient */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-transparent via-[#7B2CBF] to-transparent"></div>
                 </div>
               </div>
             </div>
