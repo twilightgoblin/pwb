@@ -237,8 +237,8 @@ export function HeroSection() {
 
             {/* Content Section - Improved mobile typography */}
             <div className="text-white px-4 sm:px-5 pb-4 sm:pb-5">
-              {/* Main Headline - Better mobile sizing */}
-              <h1 className="font-[family-name:var(--font-poppins)] text-lg sm:text-xl font-bold leading-tight tracking-tight mb-2.5 text-left">
+              {/* Main Headline - Improved mobile sizing to match reference */}
+              <h1 className="font-[family-name:var(--font-poppins)] text-2xl sm:text-3xl font-bold leading-[1.1] tracking-tight mb-3 text-left">
                 Ready-to-Move
                 <br />
                 Flats in Lucknow
@@ -299,8 +299,8 @@ export function HeroSection() {
                 <span className="text-xs lg:text-sm text-[#9CA3AF] font-medium">500+ happy customers</span>
               </div>
 
-              {/* Main Headline - Using Poppins */}
-              <h1 className="font-[family-name:var(--font-poppins)] text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-[1.1] tracking-tight mb-3 lg:mb-4 xl:mb-5">
+              {/* Main Headline - Larger sizing to match reference image */}
+              <h1 className="font-[family-name:var(--font-poppins)] text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-[1.1] tracking-tight mb-4 lg:mb-5 xl:mb-6">
                 Ready-to-Move
                 <br />
                 Flats in Lucknow
