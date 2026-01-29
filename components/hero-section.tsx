@@ -226,7 +226,7 @@ export function HeroSection() {
             <div className="relative px-4 sm:px-5 pb-4 sm:pb-5">
               <div className="relative w-full h-[280px] sm:h-[320px] rounded-[0.8rem] sm:rounded-[1rem] overflow-hidden shadow-lg">
                 <Image
-                  src="/images/hero.gif"
+                  src="/images/5.png"
                   alt="Luxury properties and apartments in Lucknow - PropertyWaleBabu"
                   fill
                   className="object-cover object-center"
@@ -338,11 +338,11 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Right Image - Smaller Size with More Padding */}
-            <div className="relative p-6 lg:p-8 xl:p-12 2xl:p-16 flex items-center justify-center">
-              <div className="relative w-[80%] h-[80%] max-w-[400px] max-h-[400px] rounded-[1rem] lg:rounded-[1.5rem] xl:rounded-[2rem] 2xl:rounded-[2.2rem] overflow-hidden shadow-lg">
+            {/* Right Image - With Responsive Padding */}
+            <div className="relative p-2 lg:p-3 xl:p-4 2xl:p-5 flex items-center">
+              <div className="relative w-full h-full rounded-[1rem] lg:rounded-[1.5rem] xl:rounded-[2rem] 2xl:rounded-[2.2rem] overflow-hidden">
                 <Image
-                  src="/images/hero.gif"
+                  src="/images/5.png"
                   alt="Luxury properties and apartments in Lucknow - PropertyWaleBabu"
                   fill
                   className="object-cover"
