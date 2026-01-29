@@ -58,6 +58,18 @@ export function AboutSection() {
                 className="object-cover object-center-top"
                 style={{ objectPosition: 'center 20%' }}
               />
+              {/* Gradient Overlay with Founder Info */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-10">
+                <h3 className="font-[family-name:var(--font-poppins)] text-2xl font-bold mb-1 text-white">
+                  Mukhtar Hashmi
+                </h3>
+                <p className="text-[#E6C87A] font-semibold text-lg mb-3">
+                  Founder & CEO
+                </p>
+                {/* Full Width Single Color Gradient */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#7B2CBF] to-transparent"></div>
+              </div>
             </div>
           </div>
 
@@ -119,6 +131,18 @@ export function AboutSection() {
                 className="object-cover object-center-top"
                 style={{ objectPosition: 'center 20%' }}
               />
+              {/* Gradient Overlay with Founder Info */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8 text-white z-10">
+                <h3 className="font-[family-name:var(--font-poppins)] text-3xl font-bold mb-2 text-white">
+                  Mukhtar Hashmi
+                </h3>
+                <p className="text-[#E6C87A] font-semibold text-xl mb-4">
+                  Founder and CEO
+                </p>
+                {/* Full Width Single Color Gradient */}
+                <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-transparent via-[#7B2CBF] to-transparent"></div>
+              </div>
             </div>
           </div>
         </div>
